@@ -1,0 +1,356 @@
+{
+  "site": {
+    "name": "NMGS",
+    "fullName": "National Mining & Geosciences Students",
+    "tagline": "Building the next generation of industry leaders",
+    "logo": "/logo.png",
+    "contact": {
+      "email": "info@nmgs.org.ng",
+      "phone": "+234 800 000 0000",
+      "address": "National Secretariat, Abuja, Nigeria"
+    },
+    "social": [
+      { "platform": "facebook", "url": "#", "label": "Facebook" },
+      { "platform": "twitter", "url": "#", "label": "Twitter" },
+      { "platform": "instagram", "url": "#", "label": "Instagram" },
+      { "platform": "linkedin", "url": "#", "label": "LinkedIn" },
+      { "platform": "youtube", "url": "#", "label": "YouTube" }
+    ]
+  },
+  "navigation": {
+    "links": [
+      { "href": "#about", "label": "About" },
+      { "href": "#benefits", "label": "Benefits" },
+      { "href": "#network", "label": "Network" },
+      { "href": "#partners", "label": "Partners" }
+    ],
+    "cta": {
+      "login": "Member Login",
+      "loginHref": "/login",
+      "primary": "Get Certified",
+      "primaryHref": "/signup"
+    }
+  },
+  "hero": {
+    "badge": "2025 Registration Now Open",
+    "headline": {
+      "prefix": "The National Body for",
+      "highlight": "Mining & Geosciences",
+      "suffix": "Students"
+    },
+    "description": "Connect with peers across 50+ institutions, secure top-tier internships, and get professionally certified.",
+    "stats": [
+      { "value": "12,000+", "label": "Active Members" },
+      { "value": "50+", "label": "Member Schools" },
+      { "value": "200+", "label": "Partner Companies" }
+    ],
+    "cta": {
+      "primary": "Become a Member",
+      "secondary": "View Member Schools"
+    },
+    "image": "/diverse-university-students-in-geology-field-work-.jpg",
+    "floatingCard": {
+      "text": "+500 joined this month",
+      "subtext": "Students nationwide",
+      "avatars": [
+        "/african-student-portrait-1.jpg",
+        "/african-student-portrait-2.jpg",
+        "/african-student-portrait-3.jpg"
+      ]
+    }
+  },
+  "trustBar": {
+    "headline": "Trusted by top institutions nationwide",
+    "partners": [
+      { "name": "Shell Nigeria", "logo": "/shell-company-logo-grayscale.jpg" },
+      { "name": "Chevron", "logo": "/chevron-company-logo-grayscale.jpg" },
+      { "name": "Total Energies", "logo": "/totalenergies-company-logo-grayscale.jpg" },
+      { "name": "Nigerian Mining Corp", "logo": "/mining-corporation-logo-grayscale.jpg" },
+      { "name": "University of Lagos", "logo": "/university-logo-grayscale.jpg" },
+      { "name": "Federal University", "logo": "/federal-university-logo-grayscale.jpg" }
+    ]
+  },
+  "network": {
+    "headline": "A Network Spanning the Nation",
+    "description": "Join students from over 50 institutions across Nigeria. Hover over a pin to see the school, click to learn more about connecting with the chapter.",
+    "stats": {
+      "chapters": "50+ Chapters",
+      "students": "12,000+ Students"
+    },
+    "modal": {
+      "title": "Join to Access",
+      "benefits": [
+        "View chapter executive contacts",
+        "Access chapter resources & events",
+        "Connect with fellow students"
+      ],
+      "cta": "Become a Member"
+    },
+    "schools": [
+      { "id": 1, "name": "University of Lagos", "state": "Lagos", "x": 28, "y": 72, "members": 450 },
+      { "id": 2, "name": "University of Ibadan", "state": "Oyo", "x": 24, "y": 65, "members": 380 },
+      { "id": 3, "name": "Ahmadu Bello University", "state": "Kaduna", "x": 38, "y": 35, "members": 520 },
+      { "id": 4, "name": "University of Nigeria", "state": "Enugu", "x": 40, "y": 60, "members": 410 },
+      { "id": 5, "name": "Federal University of Technology Akure", "state": "Ondo", "x": 26, "y": 62, "members": 340 },
+      { "id": 6, "name": "University of Benin", "state": "Edo", "x": 30, "y": 58, "members": 290 },
+      { "id": 7, "name": "Federal University Oye-Ekiti", "state": "Ekiti", "x": 28, "y": 58, "members": 180 },
+      { "id": 8, "name": "University of Port Harcourt", "state": "Rivers", "x": 36, "y": 70, "members": 360 },
+      { "id": 9, "name": "Federal University of Technology Owerri", "state": "Imo", "x": 38, "y": 65, "members": 320 },
+      { "id": 10, "name": "Obafemi Awolowo University", "state": "Osun", "x": 24, "y": 60, "members": 400 },
+      { "id": 11, "name": "Bayero University Kano", "state": "Kano", "x": 44, "y": 28, "members": 280 },
+      { "id": 12, "name": "University of Maiduguri", "state": "Borno", "x": 68, "y": 25, "members": 150 }
+    ]
+  },
+  "certificate": {
+    "badge": "Official Credential",
+    "headline": "Get Your Professional Identity",
+    "description": "Your membership includes an official, verifiable digital certificate sent instantly upon registration. Use it for internship applications, scholarship applications, and professional networking.",
+    "image": "/professional-membership-certificate-with-gold-bord.jpg",
+    "previewImage": "/professional-membership-certificate-with-gold-embo.jpg",
+    "features": [
+      { "icon": "shield", "title": "Digitally Verified", "description": "QR code for instant verification" },
+      { "icon": "download", "title": "Instant Delivery", "description": "Emailed within seconds" },
+      { "icon": "award", "title": "Professional Format", "description": "Print-ready PDF certificate" },
+      { "icon": "eye", "title": "Public Portfolio", "description": "Shareable member profile" }
+    ],
+    "cta": {
+      "primary": "Get Your Certificate",
+      "secondary": "Preview Sample"
+    },
+    "previewNote": "Your personalized certificate will be delivered instantly upon registration"
+  },
+  "internships": {
+    "badge": "Exclusive Opportunities",
+    "headline": "Internships & SIWES Placements",
+    "description": "Access exclusive internship opportunities with Nigeria's top oil & gas, mining, and engineering companies. Members get first access to all listings.",
+    "cta": "Unlock All Opportunities",
+    "lockMessage": "Exclusive to Members",
+    "lockCta": "Join to Apply",
+    "listings": [
+      {
+        "id": 1,
+        "company": "Shell Nigeria",
+        "logo": "/shell-company-logo.jpg",
+        "role": "Geology Intern",
+        "location": "Port Harcourt",
+        "stipend": "₦250,000/month",
+        "tags": ["Accommodation", "Paid", "Training"]
+      },
+      {
+        "id": 2,
+        "company": "Chevron Nigeria",
+        "logo": "/chevron-company-logo.jpg",
+        "role": "Mining Engineering Intern",
+        "location": "Lagos",
+        "stipend": "₦200,000/month",
+        "tags": ["Remote Option", "Paid"]
+      },
+      {
+        "id": 3,
+        "company": "Total Energies",
+        "logo": "/totalenergies-company-logo.jpg",
+        "role": "Geophysics Intern",
+        "location": "Warri",
+        "stipend": "₦180,000/month",
+        "tags": ["Accommodation", "Paid", "Transport"]
+      },
+      {
+        "id": 4,
+        "company": "Nigerian Mining Corporation",
+        "logo": "/mining-corporation-logo.jpg",
+        "role": "Field Research Intern",
+        "location": "Jos",
+        "stipend": "₦150,000/month",
+        "tags": ["Field Work", "Paid"]
+      },
+      {
+        "id": 5,
+        "company": "ExxonMobil",
+        "logo": "/exxonmobil-logo.jpg",
+        "role": "Petroleum Geology Intern",
+        "location": "Lagos",
+        "stipend": "₦300,000/month",
+        "tags": ["Accommodation", "Paid", "Premium"]
+      }
+    ]
+  },
+  "news": {
+    "headline": "Stay Updated",
+    "description": "The latest news, events, and resources from the mining and geosciences community.",
+    "viewAllCta": "View All Updates",
+    "items": [
+      {
+        "id": 1,
+        "type": "news",
+        "title": "New Mining Regulations Released by Federal Ministry",
+        "excerpt": "The Federal Ministry of Mines and Steel Development has released new guidelines affecting student internships...",
+        "date": "Dec 10, 2025",
+        "image": "/placeholder.svg?height=200&width=400"
+      },
+      {
+        "id": 2,
+        "type": "event",
+        "title": "Annual National Conference 2025: Registration Open",
+        "excerpt": "Join over 2,000 students at the biggest gathering of mining and geoscience students in Nigeria...",
+        "date": "Jan 15-18, 2025",
+        "image": "/placeholder.svg?height=200&width=400"
+      },
+      {
+        "id": 3,
+        "type": "resource",
+        "title": "Download: 2024 Mineral Distribution Map of Nigeria",
+        "excerpt": "Comprehensive mineral resource map updated with latest geological survey data...",
+        "date": "Dec 5, 2025",
+        "image": "/placeholder.svg?height=200&width=400"
+      }
+    ]
+  },
+  "council": {
+    "headline": "Led by Students, for Students",
+    "description": "Our Central Executive Council is composed of elected student leaders from institutions across Nigeria. They work tirelessly to ensure every member gets the best possible experience and opportunities.",
+    "groupPhoto": {
+      "image": "/placeholder.svg?height=400&width=600",
+      "title": "Central Executive Council 2024/2025",
+      "subtitle": "23 dedicated leaders serving 12,000+ students"
+    },
+    "cta": "Meet the Full Team",
+    "executives": [
+      {
+        "id": 1,
+        "name": "Engr. Chukwuemeka Obi",
+        "role": "National President",
+        "institution": "University of Nigeria, Nsukka",
+        "image": "/placeholder.svg?height=300&width=300",
+        "linkedin": "#",
+        "email": "president@nmgs.org.ng"
+      },
+      {
+        "id": 2,
+        "name": "Aisha Mohammed",
+        "role": "Vice President",
+        "institution": "Ahmadu Bello University",
+        "image": "/placeholder.svg?height=300&width=300",
+        "linkedin": "#",
+        "email": "vp@nmgs.org.ng"
+      },
+      {
+        "id": 3,
+        "name": "David Adeleke",
+        "role": "Secretary General",
+        "institution": "University of Lagos",
+        "image": "/placeholder.svg?height=300&width=300",
+        "linkedin": "#",
+        "email": "secretary@nmgs.org.ng"
+      },
+      {
+        "id": 4,
+        "name": "Grace Nwachukwu",
+        "role": "Financial Secretary",
+        "institution": "University of Port Harcourt",
+        "image": "/placeholder.svg?height=300&width=300",
+        "linkedin": "#",
+        "email": "finance@nmgs.org.ng"
+      }
+    ]
+  },
+  "footer": {
+    "quickLinks": [
+      { "label": "About Us", "href": "#about" },
+      { "label": "Membership", "href": "#benefits" },
+      { "label": "Chapters", "href": "#network" },
+      { "label": "Leadership", "href": "#partners" }
+    ],
+    "resources": [
+      { "label": "Internships", "href": "#" },
+      { "label": "Resource Library", "href": "#" },
+      { "label": "Events", "href": "#" },
+      { "label": "News", "href": "#" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms of Service", "href": "#" },
+      { "label": "Constitution", "href": "#" }
+    ],
+    "copyright": "© 2025 National Mining & Geosciences Students. All rights reserved."
+  },
+  "signup": {
+    "header": {
+      "title": "Join the National Body",
+      "subtitle": "Become a certified member of NMGS"
+    },
+    "steps": [{ "id": 1, "label": "Account Details" }, { "id": 2, "label": "Payment" }],
+    "form": {
+      "fullName": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name",
+        "hint": "As it should appear on your Certificate"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address",
+        "hint": "We'll send your certificate here"
+      },
+      "institution": {
+        "label": "Select Institution",
+        "placeholder": "Start typing to search...",
+        "hint": "You'll be added to your institution's chapter"
+      },
+      "password": {
+        "label": "Create Password",
+        "placeholder": "Create a secure password",
+        "hint": "Minimum 8 characters"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Confirm your password"
+      },
+      "submitButton": "Proceed to Payment"
+    },
+    "institutions": [
+      "Ahmadu Bello University, Zaria",
+      "Bayero University, Kano",
+      "Federal University of Technology, Akure",
+      "Federal University of Technology, Owerri",
+      "Federal University, Oye-Ekiti",
+      "Obafemi Awolowo University, Ile-Ife",
+      "University of Benin",
+      "University of Ibadan",
+      "University of Lagos",
+      "University of Maiduguri",
+      "University of Nigeria, Nsukka",
+      "University of Port Harcourt"
+    ],
+    "payment": {
+      "summaryTitle": "Order Summary",
+      "item": "Annual Student Membership",
+      "amount": "₦5,000",
+      "benefits": [
+        "Official Digital Certificate",
+        "Access to Internship Portal (SIWES)",
+        "Voting Rights in Elections",
+        "Access to Resource Library",
+        "Event Discounts & Priority Access"
+      ],
+      "payButton": "Pay Securely",
+      "secureNote": "Secured by Paystack. Your payment information is encrypted."
+    },
+    "processing": {
+      "steps": [
+        { "id": 1, "text": "Payment Verified", "icon": "check" },
+        { "id": 2, "text": "Generating Official Certificate", "icon": "file" },
+        { "id": 3, "text": "Sending Certificate to email", "icon": "mail" },
+        { "id": 4, "text": "Setting up your Dashboard", "icon": "rocket" }
+      ]
+    },
+    "success": {
+      "title": "Welcome to NMGS!",
+      "message": "Your membership is now active. Your certificate has been sent to your email.",
+      "dashboardButton": "Go to Dashboard"
+    },
+    "errors": {
+      "emailExists": "This email is already registered. Please login instead.",
+      "paymentFailed": "Transaction failed. Please try a different card.",
+      "retryButton": "Retry Payment"
+    }
+  }
+}
