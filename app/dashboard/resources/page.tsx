@@ -5,34 +5,62 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
-import { Calendar, FileText, Newspaper, Megaphone, Download, ExternalLink, Clock } from "lucide-react"
+import {
+  FileText,
+  Download,
+  Search,
+  File,
+  ImageIcon,
+  Video,
+  FileSpreadsheet,
+  Presentation,
+  FolderOpen,
+} from "lucide-react"
 import dashboardData from "@/data/dashboard.json"
 
-const typeIcons: Record<string, React.ComponentType<{ className?: string }>> = {
-  event: Calendar,
-  news: Newspaper,
-  resource: FileText,
-  announcement: Megaphone,
+const fileTypeIcons: Record<string, React.ComponentType<{ className?: string }>> = {
+  pdf: FileText,
+  doc: File,
+  docx: File,
+  xls: FileSpreadsheet,
+  xlsx: FileSpreadsheet,
+  ppt: Presentation,
+  pptx: Presentation,
+  jpg: ImageIcon,
+  png: ImageIcon,
+  mp4: Video,
+  default: File,
 }
 
-const typeColors: Record<string, string> = {
-  event: "bg-blue-500/10 text-blue-500",
-  news: "bg-emerald-500/10 text-emerald-500",
-  resource: "bg-amber-500/10 text-amber-500",
-  announcement: "bg-purple-500/10 text-purple-500",
+const categoryColors: Record<string, string> = {
+  "Study Materials": "bg-blue-500/10 text-blue-500",
+  "Forms & Templates": "bg-emerald-500/10 text-emerald-500",
+  "Research Papers": "bg-purple-500/10 text-purple-500",
+  Guidelines: "bg-amber-500/10 text-amber-500",
+  "Maps & Data": "bg-rose-500/10 text-rose-500",
 }
 
 export default function ResourcesPage() {
   const [activeCategory, setActiveCategory] = useState("All")
+  const [searchQuery, setSearchQuery] = useState("")
   const { resources } = dashboardData
 
   const filteredItems = resources.items.filter((item) => {
-    if (activeCategory === "All") return true
-    return item.type.toLowerCase() === activeCategory.toLowerCase()
+    const matchesCategory = activeCategory === "All" || item.category === activeCategory
+    const matchesSearch =
+      item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.description.toLowerCase().includes(searchQuery.toLowerCase())
+    return matchesCategory && matchesSearch
   })
 
   const featuredItems = resources.items.filter((item) => item.featured)
+
+  const getFileIcon = (fileType: string) => {
+    const ext = fileType.toLowerCase()
+    return fileTypeIcons[ext] || fileTypeIcons.default
+  }
 
   return (
     <div className="space-y-8">
@@ -42,57 +70,59 @@ export default function ResourcesPage() {
         <p className="text-muted-foreground mt-2 max-w-2xl">{resources.description}</p>
       </div>
 
-      {/* Featured Section */}
-      {featuredItems.length > 0 && (
+      {/* Search */}
+      <div className="relative max-w-md">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+        <Input
+          placeholder="Search resources..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="pl-10 bg-card border-border"
+        />
+      </div>
+
+      {/* Featured Resources */}
+      {featuredItems.length > 0 && searchQuery === "" && activeCategory === "All" && (
         <div>
-          <h2 className="text-lg font-semibold text-foreground mb-4">Featured</h2>
-          <div className="grid lg:grid-cols-2 gap-6">
-            {featuredItems.slice(0, 2).map((item) => {
-              const Icon = typeIcons[item.type] || Newspaper
+          <h2 className="text-lg font-semibold text-foreground mb-4">Featured Resources</h2>
+          <div className="grid lg:grid-cols-3 gap-4">
+            {featuredItems.slice(0, 3).map((item) => {
+              const FileIcon = getFileIcon(item.fileType)
               return (
-                <Card key={item.id} className="bg-card border-border overflow-hidden">
-                  <div className="aspect-video bg-secondary overflow-hidden">
-                    <img
-                      src={item.image || "/placeholder.svg"}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span
-                        className={cn(
-                          "inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-full",
-                          typeColors[item.type],
-                        )}
-                      >
-                        <Icon className="w-3 h-3" />
-                        {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
-                      </span>
-                      <span className="text-xs text-muted-foreground">{item.date}</span>
+                <Card
+                  key={item.id}
+                  className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 overflow-hidden"
+                >
+                  <CardContent className="p-5">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                        <FileIcon className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <span
+                          className={cn(
+                            "inline-flex px-2 py-0.5 text-xs font-medium rounded-full mb-2",
+                            categoryColors[item.category] || "bg-muted text-muted-foreground",
+                          )}
+                        >
+                          {item.category}
+                        </span>
+                        <h3 className="font-semibold text-foreground text-sm mb-1 line-clamp-2">{item.title}</h3>
+                        <p className="text-xs text-muted-foreground mb-2 line-clamp-2">{item.description}</p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs text-muted-foreground">
+                            {item.fileType.toUpperCase()} • {item.fileSize}
+                          </span>
+                          <Button
+                            size="sm"
+                            className="h-8 gap-1.5 bg-primary text-primary-foreground hover:bg-primary/90"
+                          >
+                            <Download className="w-3.5 h-3.5" />
+                            Download
+                          </Button>
+                        </div>
+                      </div>
                     </div>
-                    <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground line-clamp-2">{item.excerpt}</p>
-                    {item.location && (
-                      <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {item.location}
-                      </p>
-                    )}
-                    {item.deadline && (
-                      <p className="text-xs text-amber-500 mt-2 flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        Deadline: {item.deadline}
-                      </p>
-                    )}
-                    <Button className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
-                      {item.cta}
-                      {item.type === "resource" ? (
-                        <Download className="w-4 h-4" />
-                      ) : (
-                        <ExternalLink className="w-4 h-4" />
-                      )}
-                    </Button>
                   </CardContent>
                 </Card>
               )
@@ -120,45 +150,58 @@ export default function ResourcesPage() {
         ))}
       </div>
 
-      {/* All Items Grid (Masonry-style) */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Resources List */}
+      <div className="space-y-3">
         {filteredItems.map((item) => {
-          const Icon = typeIcons[item.type] || Newspaper
+          const FileIcon = getFileIcon(item.fileType)
           return (
-            <Card
-              key={item.id}
-              className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors"
-            >
-              <div className="aspect-video bg-secondary overflow-hidden">
-                <img src={item.image || "/placeholder.svg"} alt={item.title} className="w-full h-full object-cover" />
-              </div>
+            <Card key={item.id} className="bg-card border-border hover:border-primary/50 transition-colors">
               <CardContent className="p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <span
-                    className={cn(
-                      "inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full",
-                      typeColors[item.type],
-                    )}
-                  >
-                    <Icon className="w-3 h-3" />
-                    {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
-                  </span>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center shrink-0">
+                    <FileIcon className="w-5 h-5 text-muted-foreground" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <h3 className="font-medium text-foreground text-sm truncate">{item.title}</h3>
+                      <span
+                        className={cn(
+                          "inline-flex px-2 py-0.5 text-xs font-medium rounded-full shrink-0",
+                          categoryColors[item.category] || "bg-muted text-muted-foreground",
+                        )}
+                      >
+                        {item.category}
+                      </span>
+                    </div>
+                    <p className="text-xs text-muted-foreground line-clamp-1">{item.description}</p>
+                  </div>
+                  <div className="hidden sm:flex items-center gap-4 shrink-0">
+                    <span className="text-xs text-muted-foreground whitespace-nowrap">
+                      {item.fileType.toUpperCase()} • {item.fileSize}
+                    </span>
+                    <span className="text-xs text-muted-foreground whitespace-nowrap">{item.downloads} downloads</span>
+                    <Button size="sm" variant="outline" className="gap-1.5 bg-transparent">
+                      <Download className="w-3.5 h-3.5" />
+                      Download
+                    </Button>
+                  </div>
+                  <Button size="sm" variant="outline" className="sm:hidden gap-1.5 bg-transparent">
+                    <Download className="w-3.5 h-3.5" />
+                  </Button>
                 </div>
-                <h3 className="font-medium text-foreground text-sm mb-1 line-clamp-2">{item.title}</h3>
-                <p className="text-xs text-muted-foreground">{item.date}</p>
-                {item.fileType && (
-                  <p className="text-xs text-muted-foreground mt-1">
-                    {item.fileType} • {item.fileSize}
-                  </p>
-                )}
-                <Button variant="ghost" size="sm" className="mt-3 text-primary hover:text-primary/80 p-0 h-auto">
-                  {item.cta}
-                </Button>
               </CardContent>
             </Card>
           )
         })}
       </div>
+
+      {filteredItems.length === 0 && (
+        <div className="text-center py-12">
+          <FolderOpen className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+          <h3 className="text-lg font-medium text-foreground mb-2">No resources found</h3>
+          <p className="text-muted-foreground">Try adjusting your search or filter criteria.</p>
+        </div>
+      )}
     </div>
   )
 }

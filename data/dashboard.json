@@ -1,258 +1,211 @@
 {
-  "user": {
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "institution": "University of Lagos",
-    "membershipId": "NMGS-2025-001234",
-    "memberSince": "December 2025",
-    "level": "400 Level",
-    "department": "Geology",
-    "avatar": null,
-    "verified": true
-  },
   "navigation": {
     "items": [
-      { "id": "dashboard", "label": "Dashboard", "href": "/dashboard", "icon": "home" },
-      { "id": "internships", "label": "Internships & SIWES", "href": "/dashboard/internships", "icon": "briefcase" },
-      { "id": "partners", "label": "Partner Pathways", "href": "/dashboard/partners", "icon": "building" },
-      { "id": "chapters", "label": "Chapter Directory", "href": "/dashboard/chapters", "icon": "map-pin" },
-      { "id": "council", "label": "Leadership", "href": "/dashboard/council", "icon": "users" },
-      { "id": "resources", "label": "Resources & Blog", "href": "/dashboard/resources", "icon": "book-open" },
-      { "id": "profile", "label": "My Profile", "href": "/dashboard/profile", "icon": "user" }
+      { "id": 1, "label": "Dashboard", "href": "/dashboard", "icon": "home" },
+      { "id": 2, "label": "Partner Pathways", "href": "/dashboard/partners", "icon": "briefcase" },
+      { "id": 3, "label": "Chapters", "href": "/dashboard/chapters", "icon": "map-pin" },
+      { "id": 4, "label": "People", "href": "/dashboard/council", "icon": "users" },
+      { "id": 5, "label": "News & Blog", "href": "/dashboard/news", "icon": "newspaper" },
+      { "id": 6, "label": "Gallery", "href": "/dashboard/gallery", "icon": "image" },
+      { "id": 7, "label": "Internships", "href": "/dashboard/internships", "icon": "briefcase" },
+      { "id": 8, "label": "Profile", "href": "/dashboard/profile", "icon": "user" }
     ]
   },
-  "actionCards": [
+  "user": {
+    "name": "John Adebayo",
+    "email": "john.adebayo@student.unilag.edu.ng",
+    "institution": "University of Lagos",
+    "level": "400 Level",
+    "membershipId": "NMGS/2024/12345",
+    "memberSince": "Jan 2022",
+    "verified": true,
+    "avatar": "/placeholder.svg?height=100&width=100"
+  },
+  "stats": {
+    "totalMembers": "12,000+",
+    "chapters": "50+",
+    "partnerCompanies": "35+",
+    "eventsThisYear": "24"
+  },
+  "quickActions": [
     {
-      "id": "certificate",
-      "title": "My Certificate",
-      "description": "Download your official NMGS membership certificate",
-      "icon": "award",
-      "href": "#certificate",
-      "color": "primary"
+      "id": 1,
+      "title": "Partner Pathways",
+      "description": "Apply to professional bodies like NMGS, NIMechE, and COMEG",
+      "icon": "Award",
+      "href": "/dashboard/partners",
+      "color": "emerald"
     },
     {
-      "id": "internships",
-      "title": "Find Internships",
-      "description": "Browse exclusive SIWES and internship opportunities",
-      "icon": "briefcase",
-      "href": "/dashboard/internships",
+      "id": 2,
+      "title": "Chapters",
+      "description": "Find and connect with your school chapter",
+      "icon": "MapPin",
+      "href": "/dashboard/chapters",
       "color": "blue"
     },
     {
-      "id": "partners",
-      "title": "Partner Pathways",
-      "description": "Join professional bodies with guided applications",
-      "icon": "building",
-      "href": "/dashboard/partners",
-      "color": "amber"
+      "id": 3,
+      "title": "People",
+      "description": "Meet the national and local leadership",
+      "icon": "Users",
+      "href": "/dashboard/council",
+      "color": "purple"
     },
     {
-      "id": "chapters",
-      "title": "Find Your Chapter",
-      "description": "Connect with students at other institutions",
-      "icon": "map-pin",
-      "href": "/dashboard/chapters",
-      "color": "emerald"
+      "id": 4,
+      "title": "Internships",
+      "description": "Browse SIWES and internship opportunities",
+      "icon": "Briefcase",
+      "href": "/dashboard/internships",
+      "color": "orange"
     }
   ],
   "partners": {
     "headline": "Partner Pathways",
-    "description": "Get step-by-step guidance to join senior professional organizations. Your NMGS membership can serve as proof of student status.",
-    "organizations": [
+    "description": "Your gateway to professional recognition. Explore pathways to join Nigeria's premier mining and geoscience professional bodies.",
+    "bodies": [
       {
         "id": 1,
         "name": "Nigerian Mining and Geosciences Society",
-        "acronym": "NMGS Pro",
+        "acronym": "NMGS",
         "logo": "/placeholder.svg?height=80&width=80",
-        "tag": "Student Membership Available",
-        "category": "Geology",
+        "description": "The foremost professional body for mining and geoscience professionals in Nigeria.",
         "benefits": [
-          "Access to exclusive scholarships up to ₦500,000",
-          "Monthly industry journals and publications",
-          "Networking with senior professionals",
-          "Conference discounts and priority registration",
-          "Mentorship program access"
+          "Professional recognition and networking",
+          "Access to exclusive job postings",
+          "Discounted conference registration",
+          "Industry publications and journals",
+          "Mentorship opportunities"
         ],
         "requirements": [
-          { "text": "Must be in 300 Level or above", "important": true },
-          { "text": "Requires Head of Department recommendation letter", "important": true },
-          { "text": "Two passport photographs", "important": false },
-          { "text": "Valid student ID or admission letter", "important": false },
-          { "text": "NMGS membership certificate (You have this!)", "important": false }
+          "Bachelor's degree in Geology, Mining, or related field",
+          "Recommendation from two NMGS members",
+          "Payment of registration and annual dues",
+          "Completion of application form"
         ],
         "steps": [
           {
-            "title": "Gather Your Documents",
-            "description": "Collect all required documents including your NMGS certificate, student ID, passport photos, and HOD recommendation letter."
+            "step": 1,
+            "title": "Download Application Form",
+            "description": "Get the official NMGS membership application form from the resources section."
           },
           {
-            "title": "Visit the Official Portal",
-            "description": "Go to the NMGS Professional registration portal and create an account using your institutional email."
+            "step": 2,
+            "title": "Gather Documents",
+            "description": "Prepare your degree certificate, transcript, passport photos, and recommendation letters."
           },
           {
-            "title": "Select Student Membership",
-            "description": "Choose the 'Student Member' category. This has reduced fees and modified requirements for students."
+            "step": 3,
+            "title": "Submit Application",
+            "description": "Submit completed form and documents to the NMGS secretariat or your chapter coordinator."
           },
           {
-            "title": "Upload Documents",
-            "description": "Upload your NMGS certificate as proof of student status, along with other required documents."
+            "step": 4,
+            "title": "Pay Dues",
+            "description": "Complete payment of registration fee (₦15,000) and annual dues (₦10,000)."
           },
           {
-            "title": "Pay Registration Fee",
-            "description": "Pay the student membership fee of ₦15,000 via the portal. Keep your receipt for records."
-          },
-          {
-            "title": "Await Verification",
-            "description": "Your application will be reviewed within 2-3 weeks. You'll receive confirmation via email."
+            "step": 5,
+            "title": "Await Approval",
+            "description": "Applications are reviewed monthly. Approval takes 2-4 weeks."
           }
-        ],
-        "portalUrl": "https://nmgs-professional.org/register",
-        "fee": "₦15,000",
-        "processingTime": "2-3 weeks"
+        ]
       },
       {
         "id": 2,
-        "name": "Society of Petroleum Engineers",
-        "acronym": "SPE",
+        "name": "Council of Mining Engineers and Geoscientists",
+        "acronym": "COMEG",
         "logo": "/placeholder.svg?height=80&width=80",
-        "tag": "Student Chapter Available",
-        "category": "Petroleum",
+        "description": "The regulatory body for mining engineering and geoscience practice in Nigeria.",
         "benefits": [
-          "Access to SPE technical papers and resources",
-          "Student paper competition eligibility",
-          "Regional and international conference access",
-          "Career fair and recruitment events",
-          "Industry mentorship programs"
+          "License to practice professionally",
+          "Legal recognition in the industry",
+          "Access to government contracts",
+          "Continuing professional development",
+          "International recognition"
         ],
         "requirements": [
-          { "text": "Enrolled in petroleum-related program", "important": true },
-          { "text": "Recommendation from faculty advisor", "important": true },
-          { "text": "Valid student email address", "important": false },
-          { "text": "Passport photograph", "important": false }
+          "Minimum of 5 years post-graduation experience",
+          "NMGS membership (current)",
+          "Evidence of professional practice",
+          "Payment of licensing fees"
         ],
         "steps": [
           {
-            "title": "Create SPE Account",
-            "description": "Visit spe.org and create a free account using your institutional email address."
+            "step": 1,
+            "title": "Verify Eligibility",
+            "description": "Ensure you meet the minimum experience requirement and have current NMGS membership."
           },
           {
-            "title": "Apply for Student Membership",
-            "description": "Navigate to membership and select 'Student Member'. Fill in your academic details."
+            "step": 2,
+            "title": "Complete Assessment",
+            "description": "Pass the professional competency assessment conducted by COMEG."
           },
           {
-            "title": "Get Faculty Endorsement",
-            "description": "Request your faculty advisor or HOD to endorse your application via the system."
+            "step": 3,
+            "title": "Submit Portfolio",
+            "description": "Provide evidence of professional work including project reports and references."
           },
           {
-            "title": "Pay Membership Dues",
-            "description": "Student membership is $25 USD annually. Payment can be made via card."
+            "step": 4,
+            "title": "Interview",
+            "description": "Attend the professional interview with the COMEG licensing board."
           },
           {
-            "title": "Join Local Chapter",
-            "description": "Once approved, join your university's SPE student chapter for local activities."
+            "step": 5,
+            "title": "Receive License",
+            "description": "Upon approval, receive your professional license and certificate."
           }
-        ],
-        "portalUrl": "https://www.spe.org/member/",
-        "fee": "$25 USD",
-        "processingTime": "1-2 weeks"
+        ]
       },
       {
         "id": 3,
-        "name": "Nigerian Institute of Mining and Geosciences",
-        "acronym": "NIMG",
+        "name": "Society of Petroleum Engineers",
+        "acronym": "SPE",
         "logo": "/placeholder.svg?height=80&width=80",
-        "tag": "Graduate Student Track",
-        "category": "Mining",
+        "description": "The largest individual-member organization serving professionals in the oil and gas industry.",
         "benefits": [
-          "Professional certification pathway",
-          "Access to mining site visits",
-          "Technical workshop participation",
-          "Job placement assistance",
-          "Professional indemnity coverage"
+          "Global networking opportunities",
+          "Access to technical papers and journals",
+          "Student chapter activities",
+          "Career resources and job board",
+          "Conference discounts worldwide"
         ],
         "requirements": [
-          { "text": "Final year or postgraduate student", "important": true },
-          { "text": "Completed industrial training (SIWES)", "important": true },
-          { "text": "Academic transcript", "important": false },
-          { "text": "NMGS membership proof", "important": false },
-          { "text": "Reference from two NIMG members", "important": true }
+          "Enrollment in relevant degree program (students)",
+          "Online application completion",
+          "Payment of membership dues",
+          "Faculty advisor endorsement (for chapters)"
         ],
         "steps": [
           {
-            "title": "Verify Eligibility",
-            "description": "Confirm you're in final year or postgraduate level and have completed SIWES."
+            "step": 1,
+            "title": "Create SPE Account",
+            "description": "Visit spe.org and create your personal account with valid student email."
           },
           {
-            "title": "Find Two Referees",
-            "description": "Identify two existing NIMG members who can provide references. Ask lecturers or industry contacts."
+            "step": 2,
+            "title": "Apply for Student Membership",
+            "description": "Select student membership category and complete the online application."
           },
           {
-            "title": "Download Application Form",
-            "description": "Get the Graduate Student application form from the NIMG website."
+            "step": 3,
+            "title": "Pay Dues",
+            "description": "Student membership costs $25 annually with access to all digital resources."
           },
           {
-            "title": "Submit Application Package",
-            "description": "Submit completed form with transcript, NMGS certificate, SIWES letter, and referee details."
-          },
-          {
-            "title": "Attend Interview",
-            "description": "If shortlisted, attend a brief interview with the membership committee."
-          },
-          {
-            "title": "Pay and Receive Card",
-            "description": "Upon approval, pay ₦25,000 and receive your Graduate Student membership card."
+            "step": 4,
+            "title": "Join Local Section",
+            "description": "Connect with the Nigeria section and your university's SPE student chapter."
           }
-        ],
-        "portalUrl": "https://nimg.org.ng/membership",
-        "fee": "₦25,000",
-        "processingTime": "4-6 weeks"
-      },
-      {
-        "id": 4,
-        "name": "Geological Society of Africa",
-        "acronym": "GSAf",
-        "logo": "/placeholder.svg?height=80&width=80",
-        "tag": "Free Student Membership",
-        "category": "Geology",
-        "benefits": [
-          "Free access to African geology journals",
-          "Conference presentation opportunities",
-          "Research collaboration network",
-          "Field trip subsidies",
-          "Annual student awards eligibility"
-        ],
-        "requirements": [
-          { "text": "Studying geology or related field", "important": true },
-          { "text": "Enrolled in African institution", "important": true },
-          { "text": "Proof of student status", "important": false }
-        ],
-        "steps": [
-          {
-            "title": "Visit GSAf Portal",
-            "description": "Go to the Geological Society of Africa website and find the membership section."
-          },
-          {
-            "title": "Complete Online Form",
-            "description": "Fill the student membership form with your academic and contact details."
-          },
-          {
-            "title": "Upload Student Proof",
-            "description": "Upload your NMGS certificate or student ID as proof of enrollment."
-          },
-          {
-            "title": "Submit Application",
-            "description": "Submit and wait for confirmation. Student membership is completely free!"
-          }
-        ],
-        "portalUrl": "https://gsaf.org/membership",
-        "fee": "Free",
-        "processingTime": "1 week"
+        ]
       }
     ]
   },
   "chapters": {
     "headline": "Chapter Directory",
-    "description": "Connect with NMGS chapters across Nigerian universities. Reach out to chapter executives for local events and networking.",
+    "description": "Explore NMGS chapters across Nigerian universities. Find your school, connect with executives, and discover your department's community.",
     "filters": {
       "zones": ["All Zones", "North-West", "North-East", "North-Central", "South-West", "South-East", "South-South"],
       "states": [
@@ -275,150 +228,479 @@
       {
         "id": 1,
         "name": "University of Lagos",
+        "shortName": "UNILAG",
         "state": "Lagos",
         "zone": "South-West",
         "members": 450,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Oluwaseun Adeyemi",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "unilag.nmgs@gmail.com",
-          "phone": "+234 801 234 5678"
+        "established": 2015,
+        "department": {
+          "name": "Department of Geosciences",
+          "faculty": "Faculty of Science",
+          "description": "The Department of Geosciences at the University of Lagos was established in 1962 as one of the pioneer departments in the Faculty of Science. The department offers undergraduate and postgraduate programs in Geology and Geophysics, producing some of Nigeria's finest geoscientists who work in oil and gas, mining, environmental consulting, and academia.",
+          "address": "Department of Geosciences, University of Lagos, Akoka, Yaba, Lagos",
+          "email": "geosciences@unilag.edu.ng",
+          "phone": "+234 1 280 2439"
         },
-        "established": 2015
+        "hod": {
+          "name": "Prof. Adebayo Oluwole",
+          "title": "Professor of Petroleum Geology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "Welcome to the Department of Geosciences. Our mission is to train world-class geoscientists equipped with the knowledge and skills to tackle Nigeria's resource challenges. We encourage all our students to actively participate in NMGS activities as part of their professional development.",
+          "email": "aoluwole@unilag.edu.ng",
+          "phone": "+234 802 345 6789"
+        },
+        "staff": [
+          {
+            "name": "Dr. Funke Adeyemi",
+            "title": "Senior Lecturer",
+            "specialization": "Sedimentology",
+            "image": "/placeholder.svg?height=100&width=100"
+          },
+          {
+            "name": "Dr. Chidi Okeke",
+            "title": "Lecturer I",
+            "specialization": "Applied Geophysics",
+            "image": "/placeholder.svg?height=100&width=100"
+          },
+          {
+            "name": "Dr. Musa Ibrahim",
+            "title": "Lecturer I",
+            "specialization": "Economic Geology",
+            "image": "/placeholder.svg?height=100&width=100"
+          },
+          {
+            "name": "Dr. Ngozi Eze",
+            "title": "Lecturer II",
+            "specialization": "Environmental Geology",
+            "image": "/placeholder.svg?height=100&width=100"
+          }
+        ],
+        "executives": [
+          {
+            "name": "Oluwaseun Adeyemi",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "unilag.nmgs@gmail.com",
+            "phone": "+234 801 234 5678"
+          },
+          {
+            "name": "Chidinma Okafor",
+            "role": "Vice President",
+            "level": "400 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "vp.unilag.nmgs@gmail.com",
+            "phone": "+234 803 456 7890"
+          },
+          {
+            "name": "Tunde Bakare",
+            "role": "General Secretary",
+            "level": "400 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "sec.unilag.nmgs@gmail.com",
+            "phone": "+234 805 678 9012"
+          },
+          {
+            "name": "Amaka Nwosu",
+            "role": "Financial Secretary",
+            "level": "300 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "fin.unilag.nmgs@gmail.com",
+            "phone": "+234 807 890 1234"
+          },
+          {
+            "name": "Kehinde Adewale",
+            "role": "Public Relations Officer",
+            "level": "400 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "pro.unilag.nmgs@gmail.com",
+            "phone": "+234 809 012 3456"
+          }
+        ]
       },
       {
         "id": 2,
         "name": "University of Ibadan",
+        "shortName": "UI",
         "state": "Oyo",
         "zone": "South-West",
         "members": 380,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Folake Ogundimu",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "ui.nmgs@gmail.com",
-          "phone": "+234 802 345 6789"
+        "established": 2014,
+        "department": {
+          "name": "Department of Geology",
+          "faculty": "Faculty of Science",
+          "description": "The Department of Geology at the University of Ibadan is one of the oldest and most prestigious geology departments in Nigeria, established in 1948. The department has produced numerous leaders in the oil and gas industry, mining sector, and academia, maintaining a strong tradition of excellence in geoscience education and research.",
+          "address": "Department of Geology, University of Ibadan, Ibadan, Oyo State",
+          "email": "geology@ui.edu.ng",
+          "phone": "+234 2 810 1100"
         },
-        "established": 2014
+        "hod": {
+          "name": "Prof. Olukayode Taiwo",
+          "title": "Professor of Structural Geology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "The Department of Geology continues to uphold its tradition of academic excellence. We are proud of our NMGS chapter and encourage active student participation in professional activities that prepare them for successful careers.",
+          "email": "otaiwo@ui.edu.ng",
+          "phone": "+234 803 456 7890"
+        },
+        "staff": [
+          {
+            "name": "Dr. Shade Olayinka",
+            "title": "Reader",
+            "specialization": "Hydrogeology",
+            "image": "/placeholder.svg?height=100&width=100"
+          },
+          {
+            "name": "Dr. Kunle Ajayi",
+            "title": "Senior Lecturer",
+            "specialization": "Geochemistry",
+            "image": "/placeholder.svg?height=100&width=100"
+          }
+        ],
+        "executives": [
+          {
+            "name": "Folake Ogundimu",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "ui.nmgs@gmail.com",
+            "phone": "+234 802 345 6789"
+          },
+          {
+            "name": "Segun Adeleke",
+            "role": "Vice President",
+            "level": "400 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "vp.ui.nmgs@gmail.com",
+            "phone": "+234 804 567 8901"
+          },
+          {
+            "name": "Bimpe Adeoye",
+            "role": "General Secretary",
+            "level": "400 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "sec.ui.nmgs@gmail.com",
+            "phone": "+234 806 789 0123"
+          }
+        ]
       },
       {
         "id": 3,
         "name": "Ahmadu Bello University",
+        "shortName": "ABU",
         "state": "Kaduna",
         "zone": "North-West",
         "members": 520,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Ibrahim Yusuf",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "abu.nmgs@gmail.com",
-          "phone": "+234 803 456 7890"
+        "established": 2012,
+        "department": {
+          "name": "Department of Geology",
+          "faculty": "Faculty of Earth and Environmental Sciences",
+          "description": "ABU's Department of Geology is one of the largest in Nigeria, known for producing top-tier geoscientists. The department has strong research focus on solid mineral exploration and has partnerships with various mining companies across northern Nigeria.",
+          "address": "Department of Geology, Ahmadu Bello University, Zaria, Kaduna State",
+          "email": "geology@abu.edu.ng",
+          "phone": "+234 69 550 811"
         },
-        "established": 2012
+        "hod": {
+          "name": "Prof. Abubakar Sani",
+          "title": "Professor of Mining Geology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "ABU Geology department has been at the forefront of mineral resource development in Nigeria. Our NMGS chapter is the largest in the country, and we take pride in preparing students for impactful careers in the geoscience sector.",
+          "email": "asani@abu.edu.ng",
+          "phone": "+234 803 567 8901"
+        },
+        "staff": [
+          {
+            "name": "Dr. Fatima Musa",
+            "title": "Senior Lecturer",
+            "specialization": "Mineralogy",
+            "image": "/placeholder.svg?height=100&width=100"
+          },
+          {
+            "name": "Dr. Yusuf Garba",
+            "title": "Lecturer I",
+            "specialization": "Petrology",
+            "image": "/placeholder.svg?height=100&width=100"
+          }
+        ],
+        "executives": [
+          {
+            "name": "Ibrahim Yusuf",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "abu.nmgs@gmail.com",
+            "phone": "+234 803 456 7890"
+          },
+          {
+            "name": "Halima Abdullahi",
+            "role": "Vice President",
+            "level": "400 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "vp.abu.nmgs@gmail.com",
+            "phone": "+234 805 678 9012"
+          }
+        ]
       },
       {
         "id": 4,
         "name": "University of Nigeria, Nsukka",
+        "shortName": "UNN",
         "state": "Enugu",
         "zone": "South-East",
         "members": 410,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Chioma Eze",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "unn.nmgs@gmail.com",
-          "phone": "+234 804 567 8901"
+        "established": 2013,
+        "department": {
+          "name": "Department of Geology",
+          "faculty": "Faculty of Physical Sciences",
+          "description": "UNN's Department of Geology has a rich history dating back to 1960. The department is known for groundbreaking research in coal geology and the sedimentary basins of southeastern Nigeria. Our graduates serve in leading positions across the oil and gas industry.",
+          "address": "Department of Geology, University of Nigeria, Nsukka, Enugu State",
+          "email": "geology@unn.edu.ng",
+          "phone": "+234 42 771 911"
         },
-        "established": 2013
+        "hod": {
+          "name": "Prof. Emeka Nwachukwu",
+          "title": "Professor of Coal Geology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "UNN Geology department continues to lead in research and teaching excellence. We strongly support NMGS activities and encourage our students to take advantage of networking and professional development opportunities.",
+          "email": "enwachukwu@unn.edu.ng",
+          "phone": "+234 804 678 9012"
+        },
+        "staff": [
+          {
+            "name": "Dr. Obiageli Nnaji",
+            "title": "Reader",
+            "specialization": "Stratigraphy",
+            "image": "/placeholder.svg?height=100&width=100"
+          }
+        ],
+        "executives": [
+          {
+            "name": "Chioma Eze",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "unn.nmgs@gmail.com",
+            "phone": "+234 804 567 8901"
+          }
+        ]
       },
       {
         "id": 5,
         "name": "University of Port Harcourt",
+        "shortName": "UNIPORT",
         "state": "Rivers",
         "zone": "South-South",
         "members": 360,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Emeka Nwosu",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "uniport.nmgs@gmail.com",
-          "phone": "+234 805 678 9012"
+        "established": 2014,
+        "department": {
+          "name": "Department of Geology",
+          "faculty": "Faculty of Science",
+          "description": "Located in the heart of Nigeria's oil-producing region, UNIPORT's Geology department has strong ties to the petroleum industry. Students benefit from proximity to major oil companies and regular field trips to exploration sites in the Niger Delta.",
+          "address": "Department of Geology, University of Port Harcourt, Choba, Rivers State",
+          "email": "geology@uniport.edu.ng",
+          "phone": "+234 84 817 941"
         },
-        "established": 2014
+        "hod": {
+          "name": "Prof. Godwin Akpan",
+          "title": "Professor of Petroleum Geology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "Our location gives students unparalleled access to the Nigerian oil and gas industry. We work closely with Shell, Total, and Chevron to provide internship and career opportunities for our students.",
+          "email": "gakpan@uniport.edu.ng",
+          "phone": "+234 805 789 0123"
+        },
+        "staff": [],
+        "executives": [
+          {
+            "name": "Emeka Nwosu",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "uniport.nmgs@gmail.com",
+            "phone": "+234 805 678 9012"
+          }
+        ]
       },
       {
         "id": 6,
         "name": "Federal University of Technology, Akure",
+        "shortName": "FUTA",
         "state": "Ondo",
         "zone": "South-West",
         "members": 340,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Adebayo Oladipo",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "futa.nmgs@gmail.com",
-          "phone": "+234 806 789 0123"
+        "established": 2016,
+        "department": {
+          "name": "Department of Applied Geology",
+          "faculty": "School of Earth and Mineral Sciences",
+          "description": "FUTA's Applied Geology department focuses on practical applications of geological knowledge in mining, petroleum, and environmental sectors. The program emphasizes hands-on training and fieldwork.",
+          "address": "Department of Applied Geology, FUTA, Akure, Ondo State",
+          "email": "appliedgeology@futa.edu.ng",
+          "phone": "+234 34 243 743"
         },
-        "established": 2016
+        "hod": {
+          "name": "Prof. Adekunle Oladipo",
+          "title": "Professor of Applied Geophysics",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "At FUTA, we believe in learning by doing. Our students gain extensive field experience that prepares them for real-world challenges in the geoscience industry.",
+          "email": "aoladipo@futa.edu.ng",
+          "phone": "+234 806 890 1234"
+        },
+        "staff": [],
+        "executives": [
+          {
+            "name": "Adebayo Oladipo",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "futa.nmgs@gmail.com",
+            "phone": "+234 806 789 0123"
+          }
+        ]
       },
       {
         "id": 7,
         "name": "Bayero University, Kano",
+        "shortName": "BUK",
         "state": "Kano",
         "zone": "North-West",
         "members": 280,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Amina Abdullahi",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "buk.nmgs@gmail.com",
-          "phone": "+234 807 890 1234"
+        "established": 2017,
+        "department": {
+          "name": "Department of Geology",
+          "faculty": "Faculty of Earth and Environmental Sciences",
+          "description": "BUK's Geology department serves students from across northern Nigeria, with particular strength in groundwater studies and basement geology relevant to the region's mineral resources.",
+          "address": "Department of Geology, Bayero University, Kano, Kano State",
+          "email": "geology@buk.edu.ng",
+          "phone": "+234 64 666 021"
         },
-        "established": 2017
+        "hod": {
+          "name": "Prof. Mahmud Abubakar",
+          "title": "Professor of Hydrogeology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "BUK Geology focuses on solving water and mineral resource challenges facing northern Nigeria. Our students are trained to make meaningful contributions to sustainable development.",
+          "email": "mabubakar@buk.edu.ng",
+          "phone": "+234 807 901 2345"
+        },
+        "staff": [],
+        "executives": [
+          {
+            "name": "Amina Abdullahi",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "buk.nmgs@gmail.com",
+            "phone": "+234 807 890 1234"
+          }
+        ]
       },
       {
         "id": 8,
         "name": "Federal University of Technology, Owerri",
+        "shortName": "FUTO",
         "state": "Imo",
         "zone": "South-East",
         "members": 320,
+        "status": "active",
         "logo": "/placeholder.svg?height=60&width=60",
-        "president": {
-          "name": "Chukwudi Okoro",
-          "image": "/placeholder.svg?height=100&width=100",
-          "email": "futo.nmgs@gmail.com",
-          "phone": "+234 808 901 2345"
+        "established": 2015,
+        "department": {
+          "name": "Department of Geology",
+          "faculty": "School of Physical Sciences",
+          "description": "FUTO's Geology department combines technical rigor with practical field training. The department has strong research programs in petroleum geology and environmental geoscience.",
+          "address": "Department of Geology, FUTO, Owerri, Imo State",
+          "email": "geology@futo.edu.ng",
+          "phone": "+234 83 231 534"
         },
-        "established": 2015
+        "hod": {
+          "name": "Prof. Chinedu Okonkwo",
+          "title": "Professor of Environmental Geology",
+          "image": "/placeholder.svg?height=200&width=200",
+          "message": "We are committed to producing environmentally conscious geoscientists who understand the balance between resource extraction and sustainability.",
+          "email": "cokonkwo@futo.edu.ng",
+          "phone": "+234 808 012 3456"
+        },
+        "staff": [],
+        "executives": [
+          {
+            "name": "Chukwudi Okoro",
+            "role": "President",
+            "level": "500 Level",
+            "image": "/placeholder.svg?height=150&width=150",
+            "email": "futo.nmgs@gmail.com",
+            "phone": "+234 808 901 2345"
+          }
+        ]
       }
     ]
   },
   "council": {
-    "headline": "The National Executive Council",
-    "description": "Meet the elected leaders guiding NMGS. They represent 12,000+ students and work to secure opportunities for all members.",
-    "executives": [
+    "headline": "Leadership & People",
+    "description": "Meet the dedicated individuals who lead and guide NMGS at national and local levels.",
+    "tabs": ["Staff Advisers", "CEC", "Senate", "Council of Presidents"],
+    "staffAdvisers": [
+      {
+        "id": 1,
+        "name": "Prof. Adebayo Oluwole",
+        "role": "National Staff Adviser",
+        "institution": "University of Lagos",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Professor of Petroleum Geology with over 25 years of experience in academia and industry. Provides strategic guidance to NMGS leadership on professional development and industry partnerships.",
+        "linkedin": "https://linkedin.com/in/adebayo-oluwole",
+        "email": "staffadviser@nmgs.org.ng"
+      },
+      {
+        "id": 2,
+        "name": "Dr. Fatima Musa",
+        "role": "Deputy Staff Adviser (North)",
+        "institution": "Ahmadu Bello University",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Senior Lecturer in Mineralogy with expertise in solid mineral exploration. Coordinates NMGS activities across northern Nigerian universities.",
+        "linkedin": "https://linkedin.com/in/fatima-musa",
+        "email": "dsa.north@nmgs.org.ng"
+      },
+      {
+        "id": 3,
+        "name": "Dr. Chidi Okeke",
+        "role": "Deputy Staff Adviser (South)",
+        "institution": "University of Port Harcourt",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Applied Geophysicist with strong ties to the oil and gas industry. Facilitates internship partnerships with major energy companies.",
+        "linkedin": "https://linkedin.com/in/chidi-okeke",
+        "email": "dsa.south@nmgs.org.ng"
+      }
+    ],
+    "cec": [
       {
         "id": 1,
         "name": "Engr. Chukwuemeka Obi",
         "role": "National President",
         "institution": "University of Nigeria, Nsukka",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Final year Geology student with a passion for sustainable mining. Led multiple advocacy campaigns for student welfare.",
+        "bio": "Final year Geology student with a passion for sustainable mining. Led multiple advocacy campaigns for student welfare and industry partnerships.",
         "linkedin": "https://linkedin.com/in/chukwuemeka-obi",
-        "email": "president@nmgs.org.ng",
-        "twitter": "https://twitter.com/chuksobi"
+        "email": "president@nmgs.org.ng"
       },
       {
         "id": 2,
         "name": "Aisha Mohammed",
-        "role": "Vice President",
+        "role": "National Vice President",
         "institution": "Ahmadu Bello University",
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Mining Engineering student focused on women in mining initiatives and chapter development across northern Nigeria.",
         "linkedin": "https://linkedin.com/in/aisha-mohammed",
-        "email": "vp@nmgs.org.ng",
-        "twitter": "https://twitter.com/aishamohd"
+        "email": "vp@nmgs.org.ng"
       },
       {
         "id": 3,
@@ -426,10 +708,9 @@
         "role": "Secretary General",
         "institution": "University of Lagos",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Geophysics student with strong organizational skills. Manages all official communications and documentation.",
+        "bio": "Geophysics student with strong organizational skills. Manages all official communications and documentation for the national body.",
         "linkedin": "https://linkedin.com/in/david-adeleke",
-        "email": "secretary@nmgs.org.ng",
-        "twitter": "https://twitter.com/davidadeleke"
+        "email": "secretary@nmgs.org.ng"
       },
       {
         "id": 4,
@@ -439,8 +720,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Petroleum Geology student ensuring transparent financial management and proper allocation of association funds.",
         "linkedin": "https://linkedin.com/in/grace-nwachukwu",
-        "email": "finance@nmgs.org.ng",
-        "twitter": "https://twitter.com/gracenwach"
+        "email": "finance@nmgs.org.ng"
       },
       {
         "id": 5,
@@ -448,10 +728,9 @@
         "role": "Public Relations Officer",
         "institution": "Bayero University, Kano",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Manages NMGS's public image and media relations. Passionate about highlighting student achievements.",
+        "bio": "Manages NMGS's public image and media relations. Passionate about highlighting student achievements and opportunities.",
         "linkedin": "https://linkedin.com/in/yusuf-bello",
-        "email": "pro@nmgs.org.ng",
-        "twitter": "https://twitter.com/yusufbello"
+        "email": "pro@nmgs.org.ng"
       },
       {
         "id": 6,
@@ -461,15 +740,138 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Ensures member welfare and handles grievances. Advocates for better learning conditions nationwide.",
         "linkedin": "https://linkedin.com/in/blessing-onyekachi",
-        "email": "welfare@nmgs.org.ng",
-        "twitter": "https://twitter.com/blessingonye"
+        "email": "welfare@nmgs.org.ng"
+      }
+    ],
+    "senate": [
+      {
+        "id": 1,
+        "name": "Senator Adewale Johnson",
+        "role": "Senate President",
+        "institution": "University of Ibadan",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Presides over the NMGS Senate, ensuring legislative oversight and policy formulation for the association.",
+        "linkedin": "https://linkedin.com/in/adewale-johnson",
+        "email": "senate.president@nmgs.org.ng"
+      },
+      {
+        "id": 2,
+        "name": "Senator Hadiza Bello",
+        "role": "Deputy Senate President",
+        "institution": "Ahmadu Bello University",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Supports the Senate President and chairs important committees on student welfare and academic standards.",
+        "linkedin": "https://linkedin.com/in/hadiza-bello",
+        "email": "senate.deputy@nmgs.org.ng"
+      },
+      {
+        "id": 3,
+        "name": "Senator Obinna Eze",
+        "role": "Senate Clerk",
+        "institution": "University of Nigeria, Nsukka",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Maintains senate records, coordinates meetings, and ensures proper documentation of all legislative proceedings.",
+        "linkedin": "https://linkedin.com/in/obinna-eze",
+        "email": "senate.clerk@nmgs.org.ng"
+      },
+      {
+        "id": 4,
+        "name": "Senator Tolulope Bakare",
+        "role": "Committee Chair - Academic Affairs",
+        "institution": "Federal University of Technology, Akure",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the Academic Affairs Committee, focusing on curriculum improvement and academic welfare.",
+        "linkedin": "https://linkedin.com/in/tolulope-bakare",
+        "email": "senate.academic@nmgs.org.ng"
+      }
+    ],
+    "councilOfPresidents": [
+      {
+        "id": 1,
+        "name": "Oluwaseun Adeyemi",
+        "role": "Chapter President",
+        "institution": "University of Lagos",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the UNILAG chapter with 450+ members. Organized multiple career fairs and industry networking events.",
+        "linkedin": "https://linkedin.com/in/oluwaseun-adeyemi",
+        "email": "unilag.nmgs@gmail.com"
+      },
+      {
+        "id": 2,
+        "name": "Folake Ogundimu",
+        "role": "Chapter President",
+        "institution": "University of Ibadan",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the UI chapter known for academic excellence and strong alumni connections in the industry.",
+        "linkedin": "https://linkedin.com/in/folake-ogundimu",
+        "email": "ui.nmgs@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Ibrahim Yusuf",
+        "role": "Chapter President",
+        "institution": "Ahmadu Bello University",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the largest NMGS chapter with 520+ members. Championed solid mineral exploration initiatives.",
+        "linkedin": "https://linkedin.com/in/ibrahim-yusuf",
+        "email": "abu.nmgs@gmail.com"
+      },
+      {
+        "id": 4,
+        "name": "Chioma Eze",
+        "role": "Chapter President",
+        "institution": "University of Nigeria, Nsukka",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the UNN chapter with focus on research excellence and environmental geology initiatives.",
+        "linkedin": "https://linkedin.com/in/chioma-eze",
+        "email": "unn.nmgs@gmail.com"
+      },
+      {
+        "id": 5,
+        "name": "Emeka Nwosu",
+        "role": "Chapter President",
+        "institution": "University of Port Harcourt",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the UNIPORT chapter with strong ties to oil and gas companies in the Niger Delta region.",
+        "linkedin": "https://linkedin.com/in/emeka-nwosu",
+        "email": "uniport.nmgs@gmail.com"
+      },
+      {
+        "id": 6,
+        "name": "Adebayo Oladipo",
+        "role": "Chapter President",
+        "institution": "Federal University of Technology, Akure",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the FUTA chapter known for technical innovation and practical field training programs.",
+        "linkedin": "https://linkedin.com/in/adebayo-oladipo",
+        "email": "futa.nmgs@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Amina Abdullahi",
+        "role": "Chapter President",
+        "institution": "Bayero University, Kano",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the BUK chapter with focus on groundwater research and women in geoscience initiatives.",
+        "linkedin": "https://linkedin.com/in/amina-abdullahi",
+        "email": "buk.nmgs@gmail.com"
+      },
+      {
+        "id": 8,
+        "name": "Chukwudi Okoro",
+        "role": "Chapter President",
+        "institution": "Federal University of Technology, Owerri",
+        "image": "/placeholder.svg?height=300&width=300",
+        "bio": "Leads the FUTO chapter with emphasis on environmental geology and sustainable practices.",
+        "linkedin": "https://linkedin.com/in/chukwudi-okoro",
+        "email": "futo.nmgs@gmail.com"
       }
     ]
   },
-  "resources": {
-    "headline": "Resources & Updates",
-    "description": "Stay informed with the latest news, upcoming events, and downloadable resources for your academic journey.",
-    "categories": ["All", "News", "Events", "Resources", "Announcements"],
+  "news": {
+    "headline": "News & Blog",
+    "description": "Stay informed with the latest news, upcoming events, announcements, and insightful articles from the NMGS community.",
+    "categories": ["All", "News", "Events", "Announcements", "Blog"],
     "items": [
       {
         "id": 1,
@@ -487,187 +889,575 @@
         "type": "news",
         "title": "New Mining Regulations Released by Federal Ministry",
         "excerpt": "The Federal Ministry of Mines and Steel Development has released new guidelines that directly affect student internships and SIWES placements in the mining sector.",
-        "date": "Dec 10, 2025",
+        "date": "Dec 1, 2024",
+        "author": "Editorial Team",
         "image": "/placeholder.svg?height=200&width=400",
-        "featured": false,
-        "cta": "Read More"
+        "featured": true,
+        "readTime": "5 min read"
       },
       {
         "id": 3,
-        "type": "resource",
-        "title": "2024 Mineral Distribution Map of Nigeria",
-        "excerpt": "Comprehensive mineral resource map updated with the latest geological survey data. Essential for field work and research projects.",
-        "date": "Dec 5, 2025",
+        "type": "announcement",
+        "title": "NMGS Membership Fee Structure Update",
+        "excerpt": "Important changes to the membership fee structure for the 2024/2025 academic session. New payment options now available.",
+        "date": "Nov 28, 2024",
         "image": "/placeholder.svg?height=200&width=400",
-        "featured": true,
-        "fileType": "PDF",
-        "fileSize": "15.2 MB",
-        "cta": "Download"
+        "featured": false
       },
       {
         "id": 4,
-        "type": "announcement",
-        "title": "Scholarship Applications Now Open",
-        "excerpt": "Shell Nigeria is offering 50 scholarships worth ₦500,000 each for outstanding geology and mining students. NMGS members get priority consideration.",
-        "date": "Dec 8, 2025",
+        "type": "blog",
+        "title": "Career Paths in Geoscience: Beyond Oil & Gas",
+        "excerpt": "Exploring diverse career opportunities for geology graduates in environmental consulting, mining, government agencies, and tech startups.",
+        "date": "Nov 20, 2024",
+        "author": "Dr. Funke Adeyemi",
         "image": "/placeholder.svg?height=200&width=400",
-        "featured": true,
-        "deadline": "Jan 31, 2025",
-        "cta": "Apply Now"
+        "readTime": "8 min read",
+        "featured": true
       },
       {
         "id": 5,
         "type": "event",
-        "title": "Career Fair: Oil & Gas Edition",
-        "excerpt": "Meet recruiters from Shell, Chevron, TotalEnergies, and 20+ other companies. Bring your CV and NMGS certificate.",
-        "date": "Feb 20, 2025",
-        "location": "University of Lagos Sports Complex",
+        "title": "Lagos Chapter Career Fair 2025",
+        "excerpt": "Connect with recruiters from Shell, Total, Dangote, and 20+ other companies at the annual Lagos chapter career fair.",
+        "date": "Feb 10, 2025",
+        "location": "University of Lagos, Main Auditorium",
         "image": "/placeholder.svg?height=200&width=400",
         "featured": false,
-        "cta": "Add to Calendar"
+        "cta": "RSVP"
       },
       {
         "id": 6,
-        "type": "resource",
-        "title": "SIWES Report Writing Guide",
-        "excerpt": "Complete guide on how to write an outstanding SIWES report. Includes templates, examples, and common mistakes to avoid.",
-        "date": "Nov 28, 2025",
+        "type": "news",
+        "title": "NMGS Signs MoU with Nigerian Geological Survey Agency",
+        "excerpt": "Historic partnership to provide internship opportunities and research collaboration for NMGS members.",
+        "date": "Nov 15, 2024",
+        "author": "Editorial Team",
         "image": "/placeholder.svg?height=200&width=400",
-        "featured": false,
-        "fileType": "PDF",
-        "fileSize": "3.8 MB",
-        "cta": "Download"
+        "readTime": "4 min read",
+        "featured": false
       },
       {
         "id": 7,
-        "type": "news",
-        "title": "NMGS Signs MOU with Nigerian Mining Corporation",
-        "excerpt": "A landmark agreement that will provide 100 annual internship slots exclusively for NMGS members at NMC facilities nationwide.",
-        "date": "Nov 25, 2025",
+        "type": "blog",
+        "title": "A Student's Guide to SIWES Success",
+        "excerpt": "Tips and strategies for making the most of your industrial training experience in the mining and petroleum sectors.",
+        "date": "Nov 10, 2024",
+        "author": "Grace Nwachukwu",
         "image": "/placeholder.svg?height=200&width=400",
-        "featured": false,
-        "cta": "Read More"
+        "readTime": "6 min read",
+        "featured": false
       },
       {
         "id": 8,
-        "type": "resource",
-        "title": "Geological Field Equipment Handbook",
-        "excerpt": "Learn about essential field equipment, proper usage, and maintenance. Perfect for students preparing for field trips.",
-        "date": "Nov 20, 2025",
+        "type": "announcement",
+        "title": "Call for Papers: NMGS Student Journal Vol. 5",
+        "excerpt": "Submit your research papers for publication in the NMGS Student Journal. Deadline: January 31, 2025.",
+        "date": "Nov 5, 2024",
         "image": "/placeholder.svg?height=200&width=400",
-        "featured": false,
-        "fileType": "PDF",
-        "fileSize": "8.5 MB",
-        "cta": "Download"
+        "featured": false
+      }
+    ]
+  },
+  "gallery": {
+    "headline": "Gallery",
+    "description": "Explore photos and videos from NMGS events, field trips, conferences, and chapter activities across Nigeria.",
+    "categories": ["All", "Conferences", "Field Trips", "Chapter Events", "Awards", "Social"],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "title": "National Conference 2024 - Group Photo",
+        "category": "Conferences",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Jan 2024",
+        "location": "Abuja",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "title": "Field Trip to Ajaokuta Steel Company",
+        "category": "Field Trips",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Nov 2024",
+        "location": "Kogi State",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "title": "NMGS Documentary: 50 Years of Excellence",
+        "category": "Conferences",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "videoUrl": "https://www.youtube.com/watch?v=example",
+        "duration": "12:45",
+        "date": "Dec 2024",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "title": "UNILAG Chapter Inauguration Ceremony",
+        "category": "Chapter Events",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Oct 2024",
+        "location": "Lagos",
+        "featured": false
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "title": "Best Research Paper Award 2024",
+        "category": "Awards",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Jan 2024",
+        "location": "Abuja",
+        "featured": false
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "title": "Geological Mapping Exercise - Oban Massif",
+        "category": "Field Trips",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Sep 2024",
+        "location": "Cross River State",
+        "featured": false
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "title": "Career Talk: Women in Mining",
+        "category": "Chapter Events",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "videoUrl": "https://www.youtube.com/watch?v=example2",
+        "duration": "45:30",
+        "date": "Nov 2024",
+        "featured": false
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "title": "ABU Chapter Social Night",
+        "category": "Social",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Oct 2024",
+        "location": "Zaria",
+        "featured": false
+      },
+      {
+        "id": 9,
+        "type": "image",
+        "title": "Shell Internship Presentation Day",
+        "category": "Chapter Events",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Aug 2024",
+        "location": "Port Harcourt",
+        "featured": false
+      },
+      {
+        "id": 10,
+        "type": "image",
+        "title": "Annual Sports Competition",
+        "category": "Social",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "Mar 2024",
+        "location": "Ibadan",
+        "featured": false
+      },
+      {
+        "id": 11,
+        "type": "video",
+        "title": "Core Sample Analysis Workshop",
+        "category": "Field Trips",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "videoUrl": "https://www.youtube.com/watch?v=example3",
+        "duration": "28:15",
+        "date": "Jul 2024",
+        "featured": false
+      },
+      {
+        "id": 12,
+        "type": "image",
+        "title": "Presidential Visit to NMGS Secretariat",
+        "category": "Conferences",
+        "thumbnail": "/placeholder.svg?height=300&width=400",
+        "fullSize": "/placeholder.svg?height=800&width=1200",
+        "date": "May 2024",
+        "location": "Abuja",
+        "featured": false
       }
     ]
   },
   "internships": {
-    "headline": "Internships & SIWES",
-    "description": "Exclusive opportunities from our partner companies. As a verified member, you have priority access to all listings.",
+    "headline": "Internships & SIWES Placements",
+    "description": "Discover verified internship and SIWES opportunities from industry partners. Each listing includes detailed information on stipends, accommodation, and application requirements.",
     "filters": {
-      "locations": ["All Locations", "Lagos", "Port Harcourt", "Abuja", "Warri", "Jos", "Kaduna"],
-      "types": ["All Types", "SIWES", "Internship", "Graduate Trainee"],
-      "durations": ["All Durations", "3 Months", "6 Months", "12 Months"]
+      "types": ["All Types", "SIWES", "Internship", "Graduate Program"],
+      "industries": ["All Industries", "Oil & Gas", "Mining", "Environmental", "Government", "Consulting"],
+      "locations": ["All Locations", "Lagos", "Port Harcourt", "Abuja", "Kaduna", "Warri", "Kogi", "Remote"],
+      "accommodation": ["Any", "Provided", "Not Provided", "Allowance Given"]
     },
     "listings": [
       {
         "id": 1,
         "company": "Shell Nigeria",
-        "logo": "/shell-company-logo.jpg",
-        "role": "Geology Intern",
-        "location": "Port Harcourt",
+        "logo": "/placeholder.svg?height=80&width=80",
+        "industry": "Oil & Gas",
+        "position": "SIWES Trainee - Geology",
         "type": "SIWES",
-        "duration": "6 Months",
-        "stipend": "₦250,000/month",
-        "deadline": "Jan 15, 2025",
-        "tags": ["Accommodation", "Paid", "Training"],
-        "description": "Join Shell's exploration team and gain hands-on experience in seismic interpretation and well logging.",
-        "requirements": ["300 Level or above", "Minimum CGPA of 3.5", "NMGS membership required"],
-        "posted": "Dec 1, 2025"
+        "location": "Port Harcourt",
+        "duration": "6 months",
+        "stipend": "₦80,000/month",
+        "accommodationProvided": true,
+        "accommodationDetails": "Shared accommodation in company residential area with meals included",
+        "deadline": "Jan 31, 2025",
+        "openings": 15,
+        "description": "Join Shell's exploration team and gain hands-on experience in petroleum geology, seismic interpretation, and reservoir characterization. You'll work alongside senior geologists on active projects in the Niger Delta basin.",
+        "requirements": [
+          "Currently enrolled in 300 Level or above in Geology/Geophysics",
+          "Minimum CGPA of 3.0/5.0 or equivalent",
+          "Active NMGS membership required",
+          "Strong analytical and problem-solving skills",
+          "Proficiency in Microsoft Office applications"
+        ],
+        "benefits": [
+          "Competitive monthly stipend",
+          "Free accommodation and meals",
+          "Transportation to work sites",
+          "Access to training programs",
+          "Certificate of completion",
+          "Potential for full-time employment"
+        ],
+        "applicationSteps": [
+          {
+            "step": 1,
+            "title": "Online Application",
+            "description": "Visit shell.com.ng/careers and complete the online application form. Upload your CV, transcript, and NMGS membership certificate."
+          },
+          {
+            "step": 2,
+            "title": "Aptitude Test",
+            "description": "Shortlisted candidates will be invited to take an online aptitude test covering numerical reasoning, verbal reasoning, and technical knowledge."
+          },
+          {
+            "step": 3,
+            "title": "Technical Interview",
+            "description": "Successful candidates will have a virtual interview with the geology team to assess technical knowledge and fit."
+          },
+          {
+            "step": 4,
+            "title": "Medical Examination",
+            "description": "Selected candidates must pass a medical examination at a Shell-approved hospital."
+          },
+          {
+            "step": 5,
+            "title": "Onboarding",
+            "description": "Complete safety training and documentation before starting your placement."
+          }
+        ],
+        "contact": {
+          "name": "HR Recruitment Team",
+          "email": "internships@shell.com.ng",
+          "phone": "+234 84 230 5555"
+        },
+        "featured": true
       },
       {
         "id": 2,
-        "company": "Chevron Nigeria",
-        "logo": "/chevron-company-logo.jpg",
-        "role": "Mining Engineering Intern",
-        "location": "Lagos",
+        "company": "Dangote Cement",
+        "logo": "/placeholder.svg?height=80&width=80",
+        "industry": "Mining",
+        "position": "Mining Engineering Intern",
         "type": "Internship",
-        "duration": "3 Months",
-        "stipend": "₦200,000/month",
-        "deadline": "Jan 20, 2025",
-        "tags": ["Remote Option", "Paid"],
-        "description": "Work with our mining optimization team on resource estimation and mine planning projects.",
-        "requirements": ["400 Level students", "Proficiency in mining software", "Strong analytical skills"],
-        "posted": "Dec 3, 2025"
+        "location": "Obajana, Kogi",
+        "duration": "3 months",
+        "stipend": "₦60,000/month",
+        "accommodationProvided": true,
+        "accommodationDetails": "Free accommodation in company guest house within the plant premises",
+        "deadline": "Feb 15, 2025",
+        "openings": 20,
+        "description": "Work with our mining operations team on quarry planning, blast design, and mineral processing at Africa's largest cement plant. Gain exposure to large-scale mining operations and modern processing techniques.",
+        "requirements": [
+          "Mining Engineering, Geology, or related discipline",
+          "200 Level or above",
+          "Willingness to relocate to Kogi State",
+          "Basic computer skills (MS Office, AutoCAD is a plus)",
+          "Strong work ethic and eagerness to learn"
+        ],
+        "benefits": [
+          "Monthly stipend of ₦60,000",
+          "Free furnished accommodation",
+          "Three meals daily at company canteen",
+          "Site transportation provided",
+          "Safety gear and equipment",
+          "Industrial exposure certificate"
+        ],
+        "applicationSteps": [
+          {
+            "step": 1,
+            "title": "Email Application",
+            "description": "Send your CV and cover letter to careers@dangotecement.com with subject 'Mining Intern Application - [Your Name]'."
+          },
+          {
+            "step": 2,
+            "title": "Document Verification",
+            "description": "Submit copies of your student ID, transcript, and recommendation letter from your HOD."
+          },
+          {
+            "step": 3,
+            "title": "Phone Interview",
+            "description": "A brief phone screening to assess your interest and availability."
+          },
+          {
+            "step": 4,
+            "title": "Offer Letter",
+            "description": "Successful candidates receive offer letters with reporting instructions."
+          }
+        ],
+        "contact": {
+          "name": "Dangote HR Department",
+          "email": "careers@dangotecement.com",
+          "phone": "+234 1 448 0808"
+        },
+        "featured": true
       },
       {
         "id": 3,
-        "company": "TotalEnergies",
-        "logo": "/totalenergies-company-logo.jpg",
-        "role": "Geophysics Intern",
-        "location": "Warri",
-        "type": "SIWES",
-        "duration": "6 Months",
-        "stipend": "₦180,000/month",
-        "deadline": "Jan 25, 2025",
-        "tags": ["Accommodation", "Paid", "Transport"],
-        "description": "Participate in geophysical surveys and data processing under experienced professionals.",
-        "requirements": ["Geophysics students only", "Basic knowledge of seismic methods", "Willing to travel"],
-        "posted": "Dec 5, 2025"
+        "company": "Nigerian Geological Survey Agency",
+        "logo": "/placeholder.svg?height=80&width=80",
+        "industry": "Government",
+        "position": "Graduate Trainee Program",
+        "type": "Graduate Program",
+        "location": "Abuja",
+        "duration": "12 months",
+        "stipend": "₦150,000/month",
+        "accommodationProvided": false,
+        "accommodationDetails": "Housing allowance of ₦50,000/month provided instead",
+        "deadline": "Mar 1, 2025",
+        "openings": 10,
+        "description": "Comprehensive graduate program covering geological mapping, mineral resource assessment, and geohazard studies across Nigeria. Trainees rotate through different divisions and participate in nationwide field projects.",
+        "requirements": [
+          "Fresh graduate or final year student in Geology or related field",
+          "First Class or Second Class Upper degree",
+          "Active NMGS membership required",
+          "NYSC certificate or exemption letter",
+          "Nigerian citizenship"
+        ],
+        "benefits": [
+          "Competitive salary of ₦150,000/month",
+          "Housing allowance of ₦50,000/month",
+          "Health insurance coverage",
+          "Extensive field work experience",
+          "Professional development training",
+          "Pathway to permanent employment"
+        ],
+        "applicationSteps": [
+          {
+            "step": 1,
+            "title": "Online Registration",
+            "description": "Register on the NGSA recruitment portal at ngsa.gov.ng/careers."
+          },
+          {
+            "step": 2,
+            "title": "Document Upload",
+            "description": "Upload degree certificate, transcript, NYSC certificate, and birth certificate."
+          },
+          {
+            "step": 3,
+            "title": "Written Examination",
+            "description": "Computer-based test covering geology fundamentals, current affairs, and general aptitude."
+          },
+          {
+            "step": 4,
+            "title": "Oral Interview",
+            "description": "Panel interview with senior geologists at NGSA headquarters in Abuja."
+          },
+          {
+            "step": 5,
+            "title": "Background Check",
+            "description": "Security clearance and verification of credentials."
+          }
+        ],
+        "contact": {
+          "name": "NGSA Recruitment Unit",
+          "email": "recruitment@ngsa.gov.ng",
+          "phone": "+234 9 461 0461"
+        },
+        "featured": true
       },
       {
         "id": 4,
-        "company": "Nigerian Mining Corporation",
-        "logo": "/mining-corporation-logo.jpg",
-        "role": "Field Research Intern",
-        "location": "Jos",
+        "company": "TotalEnergies",
+        "logo": "/placeholder.svg?height=80&width=80",
+        "industry": "Oil & Gas",
+        "position": "SIWES Trainee - Geophysics",
         "type": "SIWES",
-        "duration": "6 Months",
-        "stipend": "₦150,000/month",
-        "deadline": "Feb 1, 2025",
-        "tags": ["Field Work", "Paid"],
-        "description": "Conduct mineral exploration and sampling activities across NMC mining sites in Plateau State.",
+        "location": "Lagos",
+        "duration": "6 months",
+        "stipend": "₦75,000/month",
+        "accommodationProvided": false,
+        "accommodationDetails": "Transport allowance of ₦20,000/month provided",
+        "deadline": "Feb 28, 2025",
+        "openings": 8,
+        "description": "Hands-on experience with seismic data processing, interpretation, and reservoir modeling using industry-standard software like Petrel and Kingdom.",
         "requirements": [
-          "Geology or Mining students",
-          "Physical fitness for field work",
-          "Valid driver's license preferred"
+          "Geophysics or Applied Geophysics student",
+          "300 Level or above",
+          "Knowledge of Petrel or similar software is a plus",
+          "Good communication skills in English",
+          "Ability to work in a team environment"
         ],
-        "posted": "Dec 7, 2025"
+        "benefits": [
+          "Monthly stipend of ₦75,000",
+          "Transport allowance of ₦20,000",
+          "Lunch provided at office canteen",
+          "Software training and certification",
+          "Mentorship from senior geophysicists"
+        ],
+        "applicationSteps": [
+          {
+            "step": 1,
+            "title": "Apply Online",
+            "description": "Submit application through TotalEnergies Nigeria career portal."
+          },
+          {
+            "step": 2,
+            "title": "Technical Assessment",
+            "description": "Online assessment covering geophysics fundamentals."
+          },
+          {
+            "step": 3,
+            "title": "Interview",
+            "description": "Virtual interview with the geophysics team."
+          }
+        ],
+        "contact": {
+          "name": "TotalEnergies HR",
+          "email": "ng.recruitment@totalenergies.com",
+          "phone": "+234 1 279 6000"
+        },
+        "featured": false
       },
       {
         "id": 5,
-        "company": "ExxonMobil",
-        "logo": "/exxonmobil-logo.jpg",
-        "role": "Petroleum Geology Intern",
-        "location": "Lagos",
+        "company": "Environmental Resources Managers Ltd",
+        "logo": "/placeholder.svg?height=80&width=80",
+        "industry": "Environmental",
+        "position": "Environmental Consultant Intern",
         "type": "Internship",
-        "duration": "12 Months",
-        "stipend": "₦300,000/month",
-        "deadline": "Feb 10, 2025",
-        "tags": ["Accommodation", "Paid", "Premium"],
-        "description": "Join our subsurface team working on reservoir characterization and production optimization.",
+        "location": "Lagos",
+        "duration": "4 months",
+        "stipend": "₦50,000/month",
+        "accommodationProvided": false,
+        "accommodationDetails": "No accommodation provided - Lagos based candidates preferred",
+        "deadline": "Jan 20, 2025",
+        "openings": 5,
+        "description": "Support environmental impact assessments, soil and water sampling, and contamination studies for oil and mining projects across Nigeria.",
         "requirements": [
-          "Final year or Masters students",
-          "Minimum CGPA of 4.0",
-          "Prior internship experience preferred"
+          "Geology or Environmental Science student",
+          "200 Level or above",
+          "Interest in environmental consulting",
+          "Valid driver's license is a plus",
+          "Good writing and reporting skills"
         ],
-        "posted": "Dec 10, 2025"
+        "benefits": [
+          "Monthly stipend of ₦50,000",
+          "Field work experience",
+          "Exposure to EIA processes",
+          "Reference letter upon completion"
+        ],
+        "applicationSteps": [
+          {
+            "step": 1,
+            "title": "Email Application",
+            "description": "Send CV and cover letter to careers@ermng.com."
+          },
+          {
+            "step": 2,
+            "title": "Interview",
+            "description": "In-person interview at Lagos office."
+          }
+        ],
+        "contact": {
+          "name": "ERM Nigeria HR",
+          "email": "careers@ermng.com",
+          "phone": "+234 1 461 0234"
+        },
+        "featured": false
       },
       {
         "id": 6,
-        "company": "Dangote Cement",
-        "logo": "/placeholder.svg?height=60&width=60",
-        "role": "Quality Control Intern",
-        "location": "Obajana",
+        "company": "Chevron Nigeria",
+        "logo": "/placeholder.svg?height=80&width=80",
+        "industry": "Oil & Gas",
+        "position": "SIWES Trainee - Petroleum Engineering",
         "type": "SIWES",
-        "duration": "3 Months",
-        "stipend": "₦120,000/month",
-        "deadline": "Feb 15, 2025",
-        "tags": ["Accommodation", "Training"],
-        "description": "Learn cement production quality control and laboratory testing procedures.",
-        "requirements": ["Geology, Chemistry, or Mining students", "Attention to detail", "Lab experience a plus"],
-        "posted": "Dec 12, 2025"
+        "location": "Warri",
+        "duration": "6 months",
+        "stipend": "₦85,000/month",
+        "accommodationProvided": true,
+        "accommodationDetails": "Fully furnished shared apartments in company residential estate with gym and recreation facilities",
+        "deadline": "Feb 10, 2025",
+        "openings": 12,
+        "description": "Rotate through drilling, production, and reservoir engineering departments with mentorship from senior engineers. Gain exposure to offshore and onshore operations.",
+        "requirements": [
+          "Petroleum Engineering or related discipline",
+          "300 Level or above",
+          "Minimum CGPA of 3.2/5.0",
+          "Strong teamwork and communication skills",
+          "Willingness to work in Warri location"
+        ],
+        "benefits": [
+          "Industry-leading stipend of ₦85,000",
+          "Premium accommodation with utilities",
+          "Three meals daily",
+          "Health and safety training",
+          "Offshore visit opportunity",
+          "High potential for permanent hire"
+        ],
+        "applicationSteps": [
+          {
+            "step": 1,
+            "title": "Apply Online",
+            "description": "Create profile and apply at chevron.com/careers."
+          },
+          {
+            "step": 2,
+            "title": "Online Tests",
+            "description": "Complete cognitive ability and technical assessments."
+          },
+          {
+            "step": 3,
+            "title": "Video Interview",
+            "description": "Recorded video interview answering preset questions."
+          },
+          {
+            "step": 4,
+            "title": "Assessment Center",
+            "description": "Full-day assessment including group exercises and panel interview in Lagos."
+          },
+          {
+            "step": 5,
+            "title": "Medical & Documentation",
+            "description": "Medical fitness test and security documentation."
+          }
+        ],
+        "contact": {
+          "name": "Chevron University Relations",
+          "email": "campus.recruiting@chevron.com",
+          "phone": "+234 53 250 4000"
+        },
+        "featured": false
       }
     ]
   }

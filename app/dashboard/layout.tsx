@@ -19,6 +19,9 @@ import {
   X,
   LogOut,
   ChevronRight,
+  Newspaper,
+  FolderDown,
+  ImageIcon,
 } from "lucide-react"
 import dashboardData from "@/data/dashboard.json"
 
@@ -30,6 +33,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   users: Users,
   "book-open": BookOpen,
   user: User,
+  newspaper: Newspaper,
+  "folder-down": FolderDown,
+  image: ImageIcon,
 }
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {

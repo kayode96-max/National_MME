@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "NAMMES",
-    "fullName": "National Association of Materials and Metallurgical Engineering Students",
+    "name": "NMGS",
+    "fullName": "National Mining & Geosciences Students",
     "tagline": "Building the next generation of industry leaders",
-    "logo": "/nammes_logo.jpg",
+    "logo": "/logo.png",
     "contact": {
       "email": "info@nmgs.org.ng",
       "phone": "+234 800 000 0000",
@@ -35,7 +35,7 @@
     "badge": "2025 Registration Now Open",
     "headline": {
       "prefix": "The National Body for",
-      "highlight": "Materials and Metallurgical Engineering",
+      "highlight": "Mining & Geosciences",
       "suffix": "Students"
     },
     "description": "Connect with peers across 50+ institutions, secure top-tier internships, and get professionally certified.",
