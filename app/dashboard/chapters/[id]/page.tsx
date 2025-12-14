@@ -29,9 +29,9 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
       </Link>
 
       {/* Hero Header */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-border p-6 lg:p-8">
+      <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-primary/20 via-primary/10 to-transparent border border-border p-6 lg:p-8">
         <div className="flex flex-col lg:flex-row lg:items-center gap-6">
-          <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-xl bg-card border border-border flex items-center justify-center overflow-hidden flex-shrink-0">
+          <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-xl bg-card border border-border flex items-center justify-center overflow-hidden shrink-0">
             <img
               src={school.logo || "/placeholder.svg"}
               alt={school.name}
@@ -93,7 +93,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold text-foreground mb-4">Head of Department</h3>
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-32 h-32 rounded-xl overflow-hidden bg-secondary flex-shrink-0">
+                <div className="w-32 h-32 rounded-xl overflow-hidden bg-secondary shrink-0">
                   <img
                     src={school.hod.image || "/placeholder.svg"}
                     alt={school.hod.name}
@@ -135,7 +135,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {school.staff.map((member, index) => (
                     <div key={index} className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg">
-                      <div className="w-12 h-12 rounded-full overflow-hidden bg-secondary flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full overflow-hidden bg-secondary shrink-0">
                         <img
                           src={member.image || "/placeholder.svg"}
                           alt={member.name}
@@ -165,11 +165,11 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
                 .map((president) => (
                   <Card
                     key={president.name}
-                    className="bg-gradient-to-br from-primary/10 to-transparent border-primary/30"
+                    className="bg-linear-to-br from-primary/10 to-transparent border-primary/30"
                   >
                     <CardContent className="p-6">
                       <div className="flex flex-col md:flex-row gap-6">
-                        <div className="w-36 h-36 rounded-xl overflow-hidden bg-secondary flex-shrink-0 mx-auto md:mx-0">
+                        <div className="w-36 h-36 rounded-xl overflow-hidden bg-secondary shrink-0uto md:mx-0">
                           <img
                             src={president.image || "/placeholder.svg"}
                             alt={president.name}
@@ -213,7 +213,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
                       .map((exec, index) => (
                         <div key={index} className="p-4 bg-secondary/30 rounded-xl">
                           <div className="flex items-center gap-4 mb-3">
-                            <div className="w-14 h-14 rounded-full overflow-hidden bg-secondary flex-shrink-0">
+                            <div className="w-14 h-14 rounded-full overflow-hidden bg-secondary shrink-0">
                               <img
                                 src={exec.image || "/placeholder.svg"}
                                 alt={exec.name}
@@ -259,7 +259,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -268,7 +268,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -279,7 +279,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -293,7 +293,7 @@ export default function SchoolProfilePage({ params }: { params: Promise<{ id: st
                 <div className="bg-secondary/30 rounded-xl p-6">
                   <h4 className="font-medium text-foreground mb-3">Quick Contact</h4>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Reach out to the chapter president for inquiries about joining NMGS {school.shortName} or
+                    Reach out to the chapter president for inquiries about joining NAMMES {school.shortName} or
                     participating in chapter activities.
                   </p>
                   {school.executives && school.executives[0] && (

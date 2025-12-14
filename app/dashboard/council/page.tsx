@@ -68,16 +68,16 @@ export default function CouncilPage() {
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
         <TabsList className="bg-card border border-border flex-wrap h-auto gap-1 p-1">
-          <TabsTrigger value="staffAdvisers" className="flex-1 min-w-[120px]">
+          <TabsTrigger value="staffAdvisers" className="flex-1 min-w-30">
             Staff Advisers
           </TabsTrigger>
-          <TabsTrigger value="cec" className="flex-1 min-w-[120px]">
+          <TabsTrigger value="cec" className="flex-1 min-w-30">
             CEC
           </TabsTrigger>
-          <TabsTrigger value="senate" className="flex-1 min-w-[120px]">
+          <TabsTrigger value="senate" className="flex-1 min-w-30">
             Senate
           </TabsTrigger>
-          <TabsTrigger value="councilOfPresidents" className="flex-1 min-w-[120px]">
+          <TabsTrigger value="councilOfPresidents" className="flex-1 min-w-30">
             Council of Presidents
           </TabsTrigger>
         </TabsList>
@@ -86,7 +86,7 @@ export default function CouncilPage() {
         <TabsContent value="staffAdvisers" className="space-y-4">
           <div className="bg-secondary/30 rounded-lg p-4 mb-6">
             <p className="text-sm text-muted-foreground">
-              Staff Advisers provide guidance and mentorship to NMGS leadership. They serve as the link between the
+              Staff Advisers provide guidance and mentorship to NAMMES leadership. They serve as the link between the
               student body and academic institutions.
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function CouncilPage() {
           <div className="bg-secondary/30 rounded-lg p-4 mb-6">
             <p className="text-sm text-muted-foreground">
               The Central Executive Council (CEC) is the elected national leadership responsible for day-to-day
-              administration and strategic direction of NMGS.
+              administration and strategic direction of NAMMES.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{council.cec.map(renderPersonCard)}</div>
@@ -108,7 +108,7 @@ export default function CouncilPage() {
         <TabsContent value="senate" className="space-y-4">
           <div className="bg-secondary/30 rounded-lg p-4 mb-6">
             <p className="text-sm text-muted-foreground">
-              The Senate is the legislative arm of NMGS, responsible for policy formulation, oversight, and ensuring
+              The Senate is the legislative arm of NAMMES, responsible for policy formulation, oversight, and ensuring
               accountability in the association's operations.
             </p>
           </div>

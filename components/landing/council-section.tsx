@@ -23,10 +23,10 @@ export default function CouncilSection() {
             <div className="relative rounded-2xl overflow-hidden">
               <img
                 src={council.groupPhoto.image || "/placeholder.svg"}
-                alt="NMGS Central Executive Council"
+                alt="NAMMES Central Executive Council"
                 className="w-full aspect-video object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-lg font-semibold text-foreground">{council.groupPhoto.title}</p>
                 <p className="text-sm text-muted-foreground">{council.groupPhoto.subtitle}</p>

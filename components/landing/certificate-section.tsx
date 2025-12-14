@@ -33,13 +33,13 @@ export default function CertificateSection() {
               <div className="relative rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] group-hover:shadow-primary/20">
                 <Image
                   src={certificate.image || "/placeholder.svg"}
-                  alt="NMGS Membership Certificate"
+                  alt="NAMMES Membership Certificate"
                   width={450}
                   height={600}
                   className="w-full h-auto"
                 />
                 {/* Shine effect on hover */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Floating badge */}

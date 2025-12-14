@@ -222,7 +222,7 @@
         "institution": "University of Nigeria, Nsukka",
         "image": "/placeholder.svg?height=300&width=300",
         "linkedin": "#",
-        "email": "president@nmgs.org.ng"
+        "email": "president@NAMMES.org.ng"
       },
       {
         "id": 2,
@@ -231,7 +231,7 @@
         "institution": "Ahmadu Bello University",
         "image": "/placeholder.svg?height=300&width=300",
         "linkedin": "#",
-        "email": "vp@nmgs.org.ng"
+        "email": "vp@NAMMES.org.ng"
       },
       {
         "id": 3,
@@ -240,7 +240,7 @@
         "institution": "University of Lagos",
         "image": "/placeholder.svg?height=300&width=300",
         "linkedin": "#",
-        "email": "secretary@nmgs.org.ng"
+        "email": "secretary@NAMMES.org.ng"
       },
       {
         "id": 4,
@@ -249,7 +249,7 @@
         "institution": "University of Port Harcourt",
         "image": "/placeholder.svg?height=300&width=300",
         "linkedin": "#",
-        "email": "finance@nmgs.org.ng"
+        "email": "finance@NAMMES.org.ng"
       }
     ]
   },
@@ -276,7 +276,7 @@
   "signup": {
     "header": {
       "title": "Join the National Body",
-      "subtitle": "Become a certified member of NMGS"
+      "subtitle": "Become a certified member of NAMMES"
     },
     "steps": [{ "id": 1, "label": "Account Details" }, { "id": 2, "label": "Payment" }],
     "form": {
@@ -343,7 +343,7 @@
       ]
     },
     "success": {
-      "title": "Welcome to NMGS!",
+      "title": "Welcome to NAMMES!",
       "message": "Your membership is now active. Your certificate has been sent to your email.",
       "dashboardButton": "Go to Dashboard"
     },

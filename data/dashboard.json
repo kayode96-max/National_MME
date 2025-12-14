@@ -49,7 +49,7 @@
     {
       "id": 1,
       "title": "Partner Pathways",
-      "description": "Apply to professional bodies like NMGS, NIMechE, and COMEG",
+      "description": "Apply to professional bodies like NAMMES, NIMechE, and COMEG",
       "icon": "Award",
       "href": "/dashboard/partners",
       "color": "emerald"
@@ -86,7 +86,7 @@
       {
         "id": 1,
         "name": "Nigerian Mining and Geosciences Society",
-        "acronym": "NMGS",
+        "acronym": "NAMMES",
         "logo": "/placeholder.svg?height=80&width=80",
         "description": "The foremost professional body for mining and geoscience professionals in Nigeria.",
         "benefits": [
@@ -98,7 +98,7 @@
         ],
         "requirements": [
           "Bachelor's degree in Geology, Mining, or related field",
-          "Recommendation from two NMGS members",
+          "Recommendation from two NAMMES members",
           "Payment of registration and annual dues",
           "Completion of application form"
         ],
@@ -106,7 +106,7 @@
           {
             "step": 1,
             "title": "Download Application Form",
-            "description": "Get the official NMGS membership application form from the resources section."
+            "description": "Get the official NAMMES membership application form from the resources section."
           },
           {
             "step": 2,
@@ -116,7 +116,7 @@
           {
             "step": 3,
             "title": "Submit Application",
-            "description": "Submit completed form and documents to the NMGS secretariat or your chapter coordinator."
+            "description": "Submit completed form and documents to the NAMMES secretariat or your chapter coordinator."
           },
           {
             "step": 4,
@@ -145,7 +145,7 @@
         ],
         "requirements": [
           "Minimum of 5 years post-graduation experience",
-          "NMGS membership (current)",
+          "NAMMES membership (current)",
           "Evidence of professional practice",
           "Payment of licensing fees"
         ],
@@ -153,7 +153,7 @@
           {
             "step": 1,
             "title": "Verify Eligibility",
-            "description": "Ensure you meet the minimum experience requirement and have current NMGS membership."
+            "description": "Ensure you meet the minimum experience requirement and have current NAMMES membership."
           },
           {
             "step": 2,
@@ -223,7 +223,7 @@
   },
   "chapters": {
     "headline": "Chapter Directory",
-    "description": "Explore NMGS chapters across Nigerian universities. Find your school, connect with executives, and discover your department's community.",
+    "description": "Explore NAMMES chapters across Nigerian universities. Find your school, connect with executives, and discover your department's community.",
     "filters": {
       "zones": ["All Zones", "North-West", "North-East", "North-Central", "South-West", "South-East", "South-South"],
       "states": [
@@ -265,7 +265,7 @@
           "name": "Prof. Adebayo Oluwole",
           "title": "Professor of Petroleum Geology",
           "image": "/placeholder.svg?height=200&width=200",
-          "message": "Welcome to the Department of Geosciences. Our mission is to train world-class geoscientists equipped with the knowledge and skills to tackle Nigeria's resource challenges. We encourage all our students to actively participate in NMGS activities as part of their professional development.",
+          "message": "Welcome to the Department of Geosciences. Our mission is to train world-class geoscientists equipped with the knowledge and skills to tackle Nigeria's resource challenges. We encourage all our students to actively participate in NAMMES activities as part of their professional development.",
           "email": "aoluwole@unilag.edu.ng",
           "phone": "+234 802 345 6789"
         },
@@ -301,7 +301,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "unilag.nmgs@gmail.com",
+            "email": "unilag.NAMMES@gmail.com",
             "phone": "+234 801 234 5678"
           },
           {
@@ -309,7 +309,7 @@
             "role": "Vice President",
             "level": "400 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "vp.unilag.nmgs@gmail.com",
+            "email": "vp.unilag.NAMMES@gmail.com",
             "phone": "+234 803 456 7890"
           },
           {
@@ -317,7 +317,7 @@
             "role": "General Secretary",
             "level": "400 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "sec.unilag.nmgs@gmail.com",
+            "email": "sec.unilag.NAMMES@gmail.com",
             "phone": "+234 805 678 9012"
           },
           {
@@ -325,7 +325,7 @@
             "role": "Financial Secretary",
             "level": "300 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "fin.unilag.nmgs@gmail.com",
+            "email": "fin.unilag.NAMMES@gmail.com",
             "phone": "+234 807 890 1234"
           },
           {
@@ -333,7 +333,7 @@
             "role": "Public Relations Officer",
             "level": "400 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "pro.unilag.nmgs@gmail.com",
+            "email": "pro.unilag.NAMMES@gmail.com",
             "phone": "+234 809 012 3456"
           }
         ]
@@ -360,7 +360,7 @@
           "name": "Prof. Olukayode Taiwo",
           "title": "Professor of Structural Geology",
           "image": "/placeholder.svg?height=200&width=200",
-          "message": "The Department of Geology continues to uphold its tradition of academic excellence. We are proud of our NMGS chapter and encourage active student participation in professional activities that prepare them for successful careers.",
+          "message": "The Department of Geology continues to uphold its tradition of academic excellence. We are proud of our NAMMES chapter and encourage active student participation in professional activities that prepare them for successful careers.",
           "email": "otaiwo@ui.edu.ng",
           "phone": "+234 803 456 7890"
         },
@@ -384,7 +384,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "ui.nmgs@gmail.com",
+            "email": "ui.NAMMES@gmail.com",
             "phone": "+234 802 345 6789"
           },
           {
@@ -392,7 +392,7 @@
             "role": "Vice President",
             "level": "400 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "vp.ui.nmgs@gmail.com",
+            "email": "vp.ui.NAMMES@gmail.com",
             "phone": "+234 804 567 8901"
           },
           {
@@ -400,7 +400,7 @@
             "role": "General Secretary",
             "level": "400 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "sec.ui.nmgs@gmail.com",
+            "email": "sec.ui.NAMMES@gmail.com",
             "phone": "+234 806 789 0123"
           }
         ]
@@ -427,7 +427,7 @@
           "name": "Prof. Abubakar Sani",
           "title": "Professor of Mining Geology",
           "image": "/placeholder.svg?height=200&width=200",
-          "message": "ABU Geology department has been at the forefront of mineral resource development in Nigeria. Our NMGS chapter is the largest in the country, and we take pride in preparing students for impactful careers in the geoscience sector.",
+          "message": "ABU Geology department has been at the forefront of mineral resource development in Nigeria. Our NAMMES chapter is the largest in the country, and we take pride in preparing students for impactful careers in the geoscience sector.",
           "email": "asani@abu.edu.ng",
           "phone": "+234 803 567 8901"
         },
@@ -451,7 +451,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "abu.nmgs@gmail.com",
+            "email": "abu.NAMMES@gmail.com",
             "phone": "+234 803 456 7890"
           },
           {
@@ -459,7 +459,7 @@
             "role": "Vice President",
             "level": "400 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "vp.abu.nmgs@gmail.com",
+            "email": "vp.abu.NAMMES@gmail.com",
             "phone": "+234 805 678 9012"
           }
         ]
@@ -486,7 +486,7 @@
           "name": "Prof. Emeka Nwachukwu",
           "title": "Professor of Coal Geology",
           "image": "/placeholder.svg?height=200&width=200",
-          "message": "UNN Geology department continues to lead in research and teaching excellence. We strongly support NMGS activities and encourage our students to take advantage of networking and professional development opportunities.",
+          "message": "UNN Geology department continues to lead in research and teaching excellence. We strongly support NAMMES activities and encourage our students to take advantage of networking and professional development opportunities.",
           "email": "enwachukwu@unn.edu.ng",
           "phone": "+234 804 678 9012"
         },
@@ -504,7 +504,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "unn.nmgs@gmail.com",
+            "email": "unn.NAMMES@gmail.com",
             "phone": "+234 804 567 8901"
           }
         ]
@@ -542,7 +542,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "uniport.nmgs@gmail.com",
+            "email": "uniport.NAMMES@gmail.com",
             "phone": "+234 805 678 9012"
           }
         ]
@@ -580,7 +580,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "futa.nmgs@gmail.com",
+            "email": "futa.NAMMES@gmail.com",
             "phone": "+234 806 789 0123"
           }
         ]
@@ -618,7 +618,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "buk.nmgs@gmail.com",
+            "email": "buk.NAMMES@gmail.com",
             "phone": "+234 807 890 1234"
           }
         ]
@@ -656,7 +656,7 @@
             "role": "President",
             "level": "500 Level",
             "image": "/placeholder.svg?height=150&width=150",
-            "email": "futo.nmgs@gmail.com",
+            "email": "futo.NAMMES@gmail.com",
             "phone": "+234 808 901 2345"
           }
         ]
@@ -665,7 +665,7 @@
   },
   "council": {
     "headline": "Leadership & People",
-    "description": "Meet the dedicated individuals who lead and guide NMGS at national and local levels.",
+    "description": "Meet the dedicated individuals who lead and guide NAMMES at national and local levels.",
     "tabs": ["Staff Advisers", "CEC", "Senate", "Council of Presidents"],
     "staffAdvisers": [
       {
@@ -674,9 +674,9 @@
         "role": "National Staff Adviser",
         "institution": "University of Lagos",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Professor of Petroleum Geology with over 25 years of experience in academia and industry. Provides strategic guidance to NMGS leadership on professional development and industry partnerships.",
+        "bio": "Professor of Petroleum Geology with over 25 years of experience in academia and industry. Provides strategic guidance to NAMMES leadership on professional development and industry partnerships.",
         "linkedin": "https://linkedin.com/in/adebayo-oluwole",
-        "email": "staffadviser@nmgs.org.ng"
+        "email": "staffadviser@NAMMES.org.ng"
       },
       {
         "id": 2,
@@ -684,9 +684,9 @@
         "role": "Deputy Staff Adviser (North)",
         "institution": "Ahmadu Bello University",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Senior Lecturer in Mineralogy with expertise in solid mineral exploration. Coordinates NMGS activities across northern Nigerian universities.",
+        "bio": "Senior Lecturer in Mineralogy with expertise in solid mineral exploration. Coordinates NAMMES activities across northern Nigerian universities.",
         "linkedin": "https://linkedin.com/in/fatima-musa",
-        "email": "dsa.north@nmgs.org.ng"
+        "email": "dsa.north@NAMMES.org.ng"
       },
       {
         "id": 3,
@@ -696,7 +696,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Applied Geophysicist with strong ties to the oil and gas industry. Facilitates internship partnerships with major energy companies.",
         "linkedin": "https://linkedin.com/in/chidi-okeke",
-        "email": "dsa.south@nmgs.org.ng"
+        "email": "dsa.south@NAMMES.org.ng"
       }
     ],
     "cec": [
@@ -708,7 +708,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Final year Geology student with a passion for sustainable mining. Led multiple advocacy campaigns for student welfare and industry partnerships.",
         "linkedin": "https://linkedin.com/in/chukwuemeka-obi",
-        "email": "president@nmgs.org.ng"
+        "email": "president@NAMMES.org.ng"
       },
       {
         "id": 2,
@@ -718,7 +718,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Mining Engineering student focused on women in mining initiatives and chapter development across northern Nigeria.",
         "linkedin": "https://linkedin.com/in/aisha-mohammed",
-        "email": "vp@nmgs.org.ng"
+        "email": "vp@NAMMES.org.ng"
       },
       {
         "id": 3,
@@ -728,7 +728,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Geophysics student with strong organizational skills. Manages all official communications and documentation for the national body.",
         "linkedin": "https://linkedin.com/in/david-adeleke",
-        "email": "secretary@nmgs.org.ng"
+        "email": "secretary@NAMMES.org.ng"
       },
       {
         "id": 4,
@@ -738,7 +738,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Petroleum Geology student ensuring transparent financial management and proper allocation of association funds.",
         "linkedin": "https://linkedin.com/in/grace-nwachukwu",
-        "email": "finance@nmgs.org.ng"
+        "email": "finance@NAMMES.org.ng"
       },
       {
         "id": 5,
@@ -746,9 +746,9 @@
         "role": "Public Relations Officer",
         "institution": "Bayero University, Kano",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Manages NMGS's public image and media relations. Passionate about highlighting student achievements and opportunities.",
+        "bio": "Manages NAMMES's public image and media relations. Passionate about highlighting student achievements and opportunities.",
         "linkedin": "https://linkedin.com/in/yusuf-bello",
-        "email": "pro@nmgs.org.ng"
+        "email": "pro@NAMMES.org.ng"
       },
       {
         "id": 6,
@@ -758,7 +758,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Ensures member welfare and handles grievances. Advocates for better learning conditions nationwide.",
         "linkedin": "https://linkedin.com/in/blessing-onyekachi",
-        "email": "welfare@nmgs.org.ng"
+        "email": "welfare@NAMMES.org.ng"
       }
     ],
     "senate": [
@@ -768,9 +768,9 @@
         "role": "Senate President",
         "institution": "University of Ibadan",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Presides over the NMGS Senate, ensuring legislative oversight and policy formulation for the association.",
+        "bio": "Presides over the NAMMES Senate, ensuring legislative oversight and policy formulation for the association.",
         "linkedin": "https://linkedin.com/in/adewale-johnson",
-        "email": "senate.president@nmgs.org.ng"
+        "email": "senate.president@NAMMES.org.ng"
       },
       {
         "id": 2,
@@ -780,7 +780,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Supports the Senate President and chairs important committees on student welfare and academic standards.",
         "linkedin": "https://linkedin.com/in/hadiza-bello",
-        "email": "senate.deputy@nmgs.org.ng"
+        "email": "senate.deputy@NAMMES.org.ng"
       },
       {
         "id": 3,
@@ -790,7 +790,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Maintains senate records, coordinates meetings, and ensures proper documentation of all legislative proceedings.",
         "linkedin": "https://linkedin.com/in/obinna-eze",
-        "email": "senate.clerk@nmgs.org.ng"
+        "email": "senate.clerk@NAMMES.org.ng"
       },
       {
         "id": 4,
@@ -800,7 +800,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the Academic Affairs Committee, focusing on curriculum improvement and academic welfare.",
         "linkedin": "https://linkedin.com/in/tolulope-bakare",
-        "email": "senate.academic@nmgs.org.ng"
+        "email": "senate.academic@NAMMES.org.ng"
       }
     ],
     "councilOfPresidents": [
@@ -812,7 +812,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the UNILAG chapter with 450+ members. Organized multiple career fairs and industry networking events.",
         "linkedin": "https://linkedin.com/in/oluwaseun-adeyemi",
-        "email": "unilag.nmgs@gmail.com"
+        "email": "unilag.NAMMES@gmail.com"
       },
       {
         "id": 2,
@@ -822,7 +822,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the UI chapter known for academic excellence and strong alumni connections in the industry.",
         "linkedin": "https://linkedin.com/in/folake-ogundimu",
-        "email": "ui.nmgs@gmail.com"
+        "email": "ui.NAMMES@gmail.com"
       },
       {
         "id": 3,
@@ -830,9 +830,9 @@
         "role": "Chapter President",
         "institution": "Ahmadu Bello University",
         "image": "/placeholder.svg?height=300&width=300",
-        "bio": "Leads the largest NMGS chapter with 520+ members. Championed solid mineral exploration initiatives.",
+        "bio": "Leads the largest NAMMES chapter with 520+ members. Championed solid mineral exploration initiatives.",
         "linkedin": "https://linkedin.com/in/ibrahim-yusuf",
-        "email": "abu.nmgs@gmail.com"
+        "email": "abu.NAMMES@gmail.com"
       },
       {
         "id": 4,
@@ -842,7 +842,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the UNN chapter with focus on research excellence and environmental geology initiatives.",
         "linkedin": "https://linkedin.com/in/chioma-eze",
-        "email": "unn.nmgs@gmail.com"
+        "email": "unn.NAMMES@gmail.com"
       },
       {
         "id": 5,
@@ -852,7 +852,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the UNIPORT chapter with strong ties to oil and gas companies in the Niger Delta region.",
         "linkedin": "https://linkedin.com/in/emeka-nwosu",
-        "email": "uniport.nmgs@gmail.com"
+        "email": "uniport.NAMMES@gmail.com"
       },
       {
         "id": 6,
@@ -862,7 +862,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the FUTA chapter known for technical innovation and practical field training programs.",
         "linkedin": "https://linkedin.com/in/adebayo-oladipo",
-        "email": "futa.nmgs@gmail.com"
+        "email": "futa.NAMMES@gmail.com"
       },
       {
         "id": 7,
@@ -872,7 +872,7 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the BUK chapter with focus on groundwater research and women in geoscience initiatives.",
         "linkedin": "https://linkedin.com/in/amina-abdullahi",
-        "email": "buk.nmgs@gmail.com"
+        "email": "buk.NAMMES@gmail.com"
       },
       {
         "id": 8,
@@ -882,13 +882,13 @@
         "image": "/placeholder.svg?height=300&width=300",
         "bio": "Leads the FUTO chapter with emphasis on environmental geology and sustainable practices.",
         "linkedin": "https://linkedin.com/in/chukwudi-okoro",
-        "email": "futo.nmgs@gmail.com"
+        "email": "futo.NAMMES@gmail.com"
       }
     ]
   },
   "news": {
     "headline": "News & Blog",
-    "description": "Stay informed with the latest news, upcoming events, announcements, and insightful articles from the NMGS community.",
+    "description": "Stay informed with the latest news, upcoming events, announcements, and insightful articles from the NAMMES community.",
     "categories": ["All", "News", "Events", "Announcements", "Blog"],
     "items": [
       {
@@ -916,7 +916,7 @@
       {
         "id": 3,
         "type": "announcement",
-        "title": "NMGS Membership Fee Structure Update",
+        "title": "NAMMES Membership Fee Structure Update",
         "excerpt": "Important changes to the membership fee structure for the 2024/2025 academic session. New payment options now available.",
         "date": "Nov 28, 2024",
         "image": "/placeholder.svg?height=200&width=400",
@@ -947,8 +947,8 @@
       {
         "id": 6,
         "type": "news",
-        "title": "NMGS Signs MoU with Nigerian Geological Survey Agency",
-        "excerpt": "Historic partnership to provide internship opportunities and research collaboration for NMGS members.",
+        "title": "NAMMES Signs MoU with Nigerian Geological Survey Agency",
+        "excerpt": "Historic partnership to provide internship opportunities and research collaboration for NAMMES members.",
         "date": "Nov 15, 2024",
         "author": "Editorial Team",
         "image": "/placeholder.svg?height=200&width=400",
@@ -969,8 +969,8 @@
       {
         "id": 8,
         "type": "announcement",
-        "title": "Call for Papers: NMGS Student Journal Vol. 5",
-        "excerpt": "Submit your research papers for publication in the NMGS Student Journal. Deadline: January 31, 2025.",
+        "title": "Call for Papers: NAMMES Student Journal Vol. 5",
+        "excerpt": "Submit your research papers for publication in the NAMMES Student Journal. Deadline: January 31, 2025.",
         "date": "Nov 5, 2024",
         "image": "/placeholder.svg?height=200&width=400",
         "featured": false
@@ -979,7 +979,7 @@
   },
   "gallery": {
     "headline": "Gallery",
-    "description": "Explore photos and videos from NMGS events, field trips, conferences, and chapter activities across Nigeria.",
+    "description": "Explore photos and videos from NAMMES events, field trips, conferences, and chapter activities across Nigeria.",
     "categories": ["All", "Conferences", "Field Trips", "Chapter Events", "Awards", "Social"],
     "items": [
       {
@@ -1007,7 +1007,7 @@
       {
         "id": 3,
         "type": "video",
-        "title": "NMGS Documentary: 50 Years of Excellence",
+        "title": "NAMMES Documentary: 50 Years of Excellence",
         "category": "Conferences",
         "thumbnail": "/placeholder.svg?height=300&width=400",
         "videoUrl": "https://www.youtube.com/watch?v=example",
@@ -1106,7 +1106,7 @@
       {
         "id": 12,
         "type": "image",
-        "title": "Presidential Visit to NMGS Secretariat",
+        "title": "Presidential Visit to NAMMES Secretariat",
         "category": "Conferences",
         "thumbnail": "/placeholder.svg?height=300&width=400",
         "fullSize": "/placeholder.svg?height=800&width=1200",
@@ -1144,7 +1144,7 @@
         "requirements": [
           "Currently enrolled in 300 Level or above in Geology/Geophysics",
           "Minimum CGPA of 3.0/5.0 or equivalent",
-          "Active NMGS membership required",
+          "Active NAMMES membership required",
           "Strong analytical and problem-solving skills",
           "Proficiency in Microsoft Office applications"
         ],
@@ -1160,7 +1160,7 @@
           {
             "step": 1,
             "title": "Online Application",
-            "description": "Visit shell.com.ng/careers and complete the online application form. Upload your CV, transcript, and NMGS membership certificate."
+            "description": "Visit shell.com.ng/careers and complete the online application form. Upload your CV, transcript, and NAMMES membership certificate."
           },
           {
             "step": 2,
@@ -1267,7 +1267,7 @@
         "requirements": [
           "Fresh graduate or final year student in Geology or related field",
           "First Class or Second Class Upper degree",
-          "Active NMGS membership required",
+          "Active NAMMES membership required",
           "NYSC certificate or exemption letter",
           "Nigerian citizenship"
         ],

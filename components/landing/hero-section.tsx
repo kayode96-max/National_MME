@@ -15,7 +15,7 @@ export default function HeroSection() {
     <section id="about" className="relative min-h-screen flex items-center pt-20">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       </div>
@@ -73,10 +73,10 @@ export default function HeroSection() {
 
           {/* Hero Visual */}
           <div className="relative">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-card border border-border">
+            <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-card border border-border">
               <img
                 src={hero.image || "/placeholder.svg"}
-                alt="NMGS Students in the field"
+                alt="NAMMES Students in the field"
                 className="w-full h-full object-cover"
               />
               {/* Play Button Overlay */}

@@ -190,7 +190,7 @@ export default function DashboardPage() {
             <div className="aspect-[1.4/1] bg-secondary rounded-lg overflow-hidden">
               <img
                 src="/professional-membership-certificate-with-gold-bord.jpg"
-                alt="NMGS Membership Certificate"
+                alt="NAMMES Membership Certificate"
                 className="w-full h-full object-contain"
               />
             </div>
