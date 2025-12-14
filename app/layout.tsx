@@ -7,23 +7,23 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NMGS - National Mining & Geosciences Students",
+  title: "NAMMES - National Association of Materials and Metallurgical Engineers Students",
   description:
-    "The National Body for Mining & Geosciences Students. Connect with peers, secure top-tier internships, and get certified.",
+    "The National Body for Materials and Metallurgical Engineers Students. Connect with peers, secure top-tier internships, and get certified.",
   generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/nammes_logo.jpg",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/nammes_logo.jpg",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/nammes_logo.jpg",
+        type: "image/jpeg",
       },
     ],
     apple: "/apple-icon.png",
