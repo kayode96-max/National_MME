@@ -31,7 +31,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">{site.name.charAt(0)}</span>
+              <img src={site.logo} alt={`${site.name} logo`} className="w-8 h-8" />
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:block">{site.name}</span>
           </Link>
