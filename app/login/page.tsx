@@ -36,7 +36,7 @@ export default function LoginPage() {
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       </div>
@@ -46,7 +46,7 @@ export default function LoginPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">{site.name.charAt(0)}</span>
+              <img src={site.logo} alt={`${site.name} logo`} className="w-8 h-8" />
             </div>
             <span className="font-bold text-lg text-foreground">{site.name}</span>
           </Link>
@@ -109,7 +109,7 @@ export default function LoginPage() {
               {/* Error Message */}
               {error && (
                 <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3 flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 text-destructive flex-shrink-0" />
+                  <AlertCircle className="w-4 h-4 text-destructive shrink-0" />
                   <p className="text-sm text-destructive">{error}</p>
                 </div>
               )}
@@ -117,7 +117,7 @@ export default function LoginPage() {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2 cursor-pointer"
                 size="lg"
                 disabled={isLoading}
               >

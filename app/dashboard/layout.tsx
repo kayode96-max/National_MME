@@ -64,7 +64,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <Menu className="w-6 h-6" />
           </Button>
           <Link href="/dashboard" className="font-bold text-lg text-foreground">
-            NMGS
+            <img src={dashboardData.site.logo} alt={`${dashboardData.site.name} logo`} className="w-8 h-8" />
           </Link>
           <Button variant="ghost" size="icon" className="relative">
             <Bell className="w-5 h-5" />
@@ -90,9 +90,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="h-16 flex items-center justify-between px-6 border-b border-border">
           <Link href="/dashboard" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">N</span>
+              <img src={dashboardData.site.logo} alt={`${dashboardData.site.name} logo`} className="w-8 h-8" />
             </div>
-            <span className="font-bold text-lg text-foreground">NMGS</span>
+            <span className="font-bold text-lg text-foreground">{dashboardData.site.name}</span>
           </Link>
           <Button variant="ghost" size="icon" className="lg:hidden" onClick={() => setSidebarOpen(false)}>
             <X className="w-5 h-5" />

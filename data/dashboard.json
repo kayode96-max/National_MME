@@ -1,4 +1,22 @@
 {
+  "site": {
+    "name": "NAMMES",
+    "fullName": "National Association of Materials and Metallurgical Engineers Students",
+    "tagline": "Building the next generation of industry leaders",
+    "logo": "/nammes_logo.jpg",
+    "contact": {
+      "email": "info@nammes.org.ng",
+      "phone": "+234 800 000 0000",
+      "address": "National Secretariat, Abuja, Nigeria"
+    },
+    "social": [
+      { "platform": "facebook", "url": "#", "label": "Facebook" },
+      { "platform": "twitter", "url": "#", "label": "Twitter" },
+      { "platform": "instagram", "url": "#", "label": "Instagram" },
+      { "platform": "linkedin", "url": "#", "label": "LinkedIn" },
+      { "platform": "youtube", "url": "#", "label": "YouTube" }
+    ]
+  },
   "navigation": {
     "items": [
       { "id": 1, "label": "Dashboard", "href": "/dashboard", "icon": "home" },
@@ -16,7 +34,7 @@
     "email": "john.adebayo@student.unilag.edu.ng",
     "institution": "University of Lagos",
     "level": "400 Level",
-    "membershipId": "NMGS/2024/12345",
+    "membershipId": "NAMMES/2024/12345",
     "memberSince": "Jan 2022",
     "verified": true,
     "avatar": "/placeholder.svg?height=100&width=100"
