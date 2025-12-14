@@ -26,7 +26,7 @@ const colorMap: Record<string, string> = {
 
 export default function DashboardPage() {
   const [certificateModalOpen, setCertificateModalOpen] = useState(false)
-  const { user, actionCards, internships } = dashboardData
+  const { user, quickActions, internships } = dashboardData
 
   return (
     <div className="space-y-8">
@@ -76,7 +76,7 @@ export default function DashboardPage() {
               </div>
               <div>
                 <p className="text-xs text-muted-foreground">Chapter</p>
-                <p className="text-sm font-medium text-foreground truncate max-w-[120px]">{user.institution}</p>
+                <p className="text-sm font-medium text-foreground truncate max-w-30">{user.institution}</p>
               </div>
             </div>
           </CardContent>
@@ -101,8 +101,8 @@ export default function DashboardPage() {
                 <Building className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground">Department</p>
-                <p className="text-sm font-medium text-foreground">{user.department}</p>
+                <p className="text-xs text-muted-foreground">Institution</p>
+                <p className="text-sm font-medium text-foreground">{user.institution}</p>
               </div>
             </div>
           </CardContent>
@@ -113,7 +113,7 @@ export default function DashboardPage() {
       <div>
         <h2 className="text-lg font-semibold text-foreground mb-4">Quick Actions</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {actionCards.map((card) => {
+          {quickActions.map((card: any) => {
             const Icon = iconMap[card.icon] || Award
             const isModal = card.id === "certificate"
 
@@ -158,7 +158,7 @@ export default function DashboardPage() {
             <Card key={internship.id} className="bg-card border-border hover:border-primary/50 transition-colors">
               <CardContent className="p-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center overflow-hidden flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center overflow-hidden shrink-0">
                     <img
                       src={internship.logo || "/placeholder.svg"}
                       alt={internship.company}
@@ -166,7 +166,7 @@ export default function DashboardPage() {
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-medium text-foreground truncate">{internship.role}</h3>
+                    <h3 className="font-medium text-foreground truncate">{internship.position}</h3>
                     <p className="text-sm text-muted-foreground">{internship.company}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">{internship.type}</span>
