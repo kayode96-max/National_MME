@@ -3,6 +3,17 @@
 import type React from "react"
 
 import { useState } from "react"
+
+interface ResourceItem {
+  id: number
+  title: string
+  description: string
+  category: string
+  fileType: string
+  fileSize: string
+  downloads: number
+  featured: boolean
+}
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -47,7 +58,7 @@ export default function ResourcesPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const { resources } = dashboardData
 
-  const filteredItems = resources.items.filter((item) => {
+  const filteredItems = resources.items.filter((item: ResourceItem) => {
     const matchesCategory = activeCategory === "All" || item.category === activeCategory
     const matchesSearch =
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -55,7 +66,7 @@ export default function ResourcesPage() {
     return matchesCategory && matchesSearch
   })
 
-  const featuredItems = resources.items.filter((item) => item.featured)
+  const featuredItems = resources.items.filter((item: ResourceItem) => item.featured)
 
   const getFileIcon = (fileType: string) => {
     const ext = fileType.toLowerCase()
@@ -86,12 +97,12 @@ export default function ResourcesPage() {
         <div>
           <h2 className="text-lg font-semibold text-foreground mb-4">Featured Resources</h2>
           <div className="grid lg:grid-cols-3 gap-4">
-            {featuredItems.slice(0, 3).map((item) => {
+            {featuredItems.slice(0, 3).map((item: ResourceItem) => {
               const FileIcon = getFileIcon(item.fileType)
               return (
                 <Card
                   key={item.id}
-                  className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 overflow-hidden"
+                  className="bg-linear-to-br from-primary/5 to-primary/10 border-primary/20 overflow-hidden"
                 >
                   <CardContent className="p-5">
                     <div className="flex items-start gap-4">
@@ -133,7 +144,7 @@ export default function ResourcesPage() {
 
       {/* Category Filters */}
       <div className="flex flex-wrap gap-2">
-        {resources.categories.map((category) => (
+        {resources.categories.map((category: string) => (
           <Button
             key={category}
             variant={activeCategory === category ? "default" : "outline"}
@@ -152,7 +163,7 @@ export default function ResourcesPage() {
 
       {/* Resources List */}
       <div className="space-y-3">
-        {filteredItems.map((item) => {
+        {filteredItems.map((item: ResourceItem) => {
           const FileIcon = getFileIcon(item.fileType)
           return (
             <Card key={item.id} className="bg-card border-border hover:border-primary/50 transition-colors">

@@ -1478,5 +1478,119 @@
         "featured": false
       }
     ]
+  },
+  "resources": {
+    "headline": "Resource Library",
+    "description": "Access study materials, forms, research papers, and other resources to support your academic and professional journey.",
+    "categories": [
+      "All",
+      "Study Materials",
+      "Forms & Templates",
+      "Research Papers",
+      "Guidelines",
+      "Maps & Data"
+    ],
+    "items": [
+      {
+        "id": 1,
+        "title": "NAMMES Membership Application Form",
+        "description": "Official form for new members to join the association",
+        "category": "Forms & Templates",
+        "fileType": "pdf",
+        "fileSize": "245 KB",
+        "downloads": 1240,
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "Materials Science Lab Manual 2024",
+        "description": "Comprehensive guide for all laboratory experiments",
+        "category": "Study Materials",
+        "fileType": "pdf",
+        "fileSize": "3.2 MB",
+        "downloads": 856,
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Introduction to Extractive Metallurgy",
+        "description": "Fundamentals of metal extraction and processing",
+        "category": "Study Materials",
+        "fileType": "pdf",
+        "fileSize": "5.8 MB",
+        "downloads": 742,
+        "featured": false
+      },
+      {
+        "id": 4,
+        "title": "SIWES Logbook Template",
+        "description": "Standard logbook format for industrial training",
+        "category": "Forms & Templates",
+        "fileType": "docx",
+        "fileSize": "156 KB",
+        "downloads": 2103,
+        "featured": true
+      },
+      {
+        "id": 5,
+        "title": "Nigerian Mining Regulations 2024",
+        "description": "Updated guidelines for mining operations in Nigeria",
+        "category": "Guidelines",
+        "fileType": "pdf",
+        "fileSize": "1.8 MB",
+        "downloads": 421,
+        "featured": false
+      },
+      {
+        "id": 6,
+        "title": "Phase Diagrams Reference Guide",
+        "description": "Essential phase diagrams for metallurgical engineering",
+        "category": "Study Materials",
+        "fileType": "pdf",
+        "fileSize": "4.1 MB",
+        "downloads": 967,
+        "featured": false
+      },
+      {
+        "id": 7,
+        "title": "Corrosion in Marine Environments",
+        "description": "Research on corrosion mechanisms in coastal structures",
+        "category": "Research Papers",
+        "fileType": "pdf",
+        "fileSize": "2.3 MB",
+        "downloads": 314,
+        "featured": false
+      },
+      {
+        "id": 8,
+        "title": "Mineral Distribution Map of Nigeria",
+        "description": "Detailed map showing mineral deposits across Nigeria",
+        "category": "Maps & Data",
+        "fileType": "pdf",
+        "fileSize": "6.5 MB",
+        "downloads": 1589,
+        "featured": false
+      },
+      {
+        "id": 9,
+        "title": "Heat Treatment Procedures",
+        "description": "Standard procedures for various heat treatment processes",
+        "category": "Study Materials",
+        "fileType": "pdf",
+        "fileSize": "1.9 MB",
+        "downloads": 678,
+        "featured": false
+      },
+      {
+        "id": 10,
+        "title": "Conference Abstract Template",
+        "description": "Format for submitting conference abstracts",
+        "category": "Forms & Templates",
+        "fileType": "docx",
+        "fileSize": "82 KB",
+        "downloads": 445,
+        "featured": false
+      }
+    ]
   }
 }
