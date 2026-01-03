@@ -1,11 +1,22 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Linkedin, Mail, ArrowRight } from "lucide-react"
-import landingData from "@/data/landing.json"
 
 export default function CouncilSection() {
+  const [landingData, setLandingData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/landing')
+      .then(res => res.json())
+      .then(data => setLandingData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!landingData) return <div className="py-20">Loading...</div>
+
   const { council } = landingData
 
   return (

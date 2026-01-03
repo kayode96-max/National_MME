@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -9,7 +9,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Command, CommandEmpty, CommandGroup, CommandItem, CommandList } from "@/components/ui/command"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Search, Users, MapPin, CheckCircle2 } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 export default function ChaptersPage() {
   const router = useRouter()
@@ -17,6 +16,17 @@ export default function ChaptersPage() {
   const [zoneFilter, setZoneFilter] = useState("All Zones")
   const [stateFilter, setStateFilter] = useState("All States")
   const [autocompleteOpen, setAutocompleteOpen] = useState(false)
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { chapters } = dashboardData
 
   const suggestions = useMemo(() => {

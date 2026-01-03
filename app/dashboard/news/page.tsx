@@ -2,13 +2,12 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 import { Calendar, Newspaper, Megaphone, ExternalLink, Clock, Search, TrendingUp } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 const typeIcons: Record<string, React.ComponentType<{ className?: string }>> = {
   event: Calendar,
@@ -27,6 +26,17 @@ const typeColors: Record<string, string> = {
 export default function NewsPage() {
   const [activeCategory, setActiveCategory] = useState("All")
   const [searchQuery, setSearchQuery] = useState("")
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { news } = dashboardData
 
   const filteredItems = news.items.filter((item) => {

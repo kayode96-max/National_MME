@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -22,9 +22,6 @@ import {
   Building2,
   ArrowRight,
 } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
-
-type InternshipListing = (typeof dashboardData.internships.listings)[0]
 
 export default function InternshipsPage() {
   const [search, setSearch] = useState("")
@@ -32,8 +29,19 @@ export default function InternshipsPage() {
   const [typeFilter, setTypeFilter] = useState("All Types")
   const [industryFilter, setIndustryFilter] = useState("All Industries")
   const [accommodationFilter, setAccommodationFilter] = useState("Any")
-  const [selectedInternship, setSelectedInternship] = useState<InternshipListing | null>(null)
+  const [selectedInternship, setSelectedInternship] = useState<any>(null)
   const [savedIds, setSavedIds] = useState<number[]>([])
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { internships } = dashboardData
 
   const filteredListings = internships.listings.filter((listing) => {

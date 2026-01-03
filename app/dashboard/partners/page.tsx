@@ -1,15 +1,25 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { CheckCircle2, Circle, AlertCircle } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 export default function PartnersPage() {
-  const [selectedPartner, setSelectedPartner] = useState<(typeof dashboardData.partners.bodies)[0] | null>(null)
+  const [selectedPartner, setSelectedPartner] = useState<any>(null)
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { partners } = dashboardData
 
   return (
