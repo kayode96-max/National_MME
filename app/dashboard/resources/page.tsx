@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 interface ResourceItem {
   id: number
@@ -29,7 +29,6 @@ import {
   Presentation,
   FolderOpen,
 } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 const fileTypeIcons: Record<string, React.ComponentType<{ className?: string }>> = {
   pdf: FileText,
@@ -56,6 +55,17 @@ const categoryColors: Record<string, string> = {
 export default function ResourcesPage() {
   const [activeCategory, setActiveCategory] = useState("All")
   const [searchQuery, setSearchQuery] = useState("")
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { resources } = dashboardData
 
   const filteredItems = resources.items.filter((item: ResourceItem) => {

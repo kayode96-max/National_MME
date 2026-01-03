@@ -1,18 +1,26 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
 import { Play, X, MapPin, Calendar, ImageIcon, Video, ChevronLeft, ChevronRight } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
-
-type GalleryItem = (typeof dashboardData.gallery.items)[0]
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All")
-  const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null)
+  const [selectedItem, setSelectedItem] = useState<any>(null)
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { gallery } = dashboardData
 
   const filteredItems = gallery.items.filter((item) => {

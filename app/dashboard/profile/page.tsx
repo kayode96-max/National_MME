@@ -1,29 +1,50 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Award, Camera, Check, Mail, Phone, School, User } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
-import landingData from "@/data/landing.json"
 
 export default function ProfilePage() {
-  const { user } = dashboardData
-  const { signup } = landingData
   const [isEditing, setIsEditing] = useState(false)
   const [saved, setSaved] = useState(false)
-
+  const [dashboardData, setDashboardData] = useState<any>(null)
+  const [landingData, setLandingData] = useState<any>(null)
   const [formData, setFormData] = useState({
-    name: user.name,
-    email: user.email,
+    name: "",
+    email: "",
     phone: "+234 801 234 5678",
-    institution: user.institution,
-    department: user.department,
-    level: user.level,
+    institution: "",
+    department: "",
+    level: "",
   })
+
+  useEffect(() => {
+    Promise.all([
+      fetch('/api/dashboard').then(res => res.json()),
+      fetch('/api/landing').then(res => res.json())
+    ]).then(([dashboard, landing]) => {
+      setDashboardData(dashboard)
+      setLandingData(landing)
+      // Update form data once user data is loaded
+      setFormData({
+        name: dashboard.user.name,
+        email: dashboard.user.email,
+        phone: "+234 801 234 5678",
+        institution: dashboard.user.institution,
+        department: dashboard.user.department,
+        level: dashboard.user.level,
+      })
+    }).catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData || !landingData) return <div className="p-8">Loading...</div>
+
+  const { user } = dashboardData
+  const { signup } = landingData
 
   const handleSave = () => {
     setIsEditing(false)

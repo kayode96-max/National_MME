@@ -1,6 +1,7 @@
-import landingData from "@/data/landing.json"
+import { getLandingData } from "@/lib/data"
 
-export default function TrustBar() {
+export default async function TrustBar() {
+  const landingData = await getLandingData()
   const { trustBar } = landingData
 
   return (

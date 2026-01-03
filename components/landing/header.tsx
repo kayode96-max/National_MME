@@ -4,21 +4,28 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
-import landingData from "@/data/landing.json"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
-  const { site, navigation } = landingData
+  const [landingData, setLandingData] = useState<any>(null)
 
   useEffect(() => {
+    fetch('/api/landing')
+      .then(res => res.json())
+      .then(data => setLandingData(data))
+      .catch(err => console.error('Error loading data:', err))
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  if (!landingData) return null
+
+  const { site, navigation } = landingData
 
   return (
     <header

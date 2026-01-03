@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
@@ -23,7 +23,6 @@ import {
   FolderDown,
   ImageIcon,
 } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   home: Home,
@@ -40,7 +39,18 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [dashboardData, setDashboardData] = useState<any>(null)
   const pathname = usePathname()
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="min-h-screen flex items-center justify-center">Loading...</div>
+
   const { navigation, user } = dashboardData
 
   // Generate breadcrumbs from pathname

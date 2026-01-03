@@ -1,14 +1,24 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Linkedin, Mail, Building2 } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 export default function CouncilPage() {
-  const { council } = dashboardData
   const [activeTab, setActiveTab] = useState("staffAdvisers")
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
+  const { council } = dashboardData
 
   const renderPersonCard = (person: {
     id: number

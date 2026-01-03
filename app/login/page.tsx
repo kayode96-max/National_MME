@@ -2,14 +2,13 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Eye, EyeOff, ArrowRight, AlertCircle } from "lucide-react"
 import Link from "next/link"
-import landingData from "@/data/landing.json"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -17,6 +16,16 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [landingData, setLandingData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/landing')
+      .then(res => res.json())
+      .then(data => setLandingData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!landingData) return <div className="min-h-screen flex items-center justify-center">Loading...</div>
 
   const { site, navigation } = landingData
 

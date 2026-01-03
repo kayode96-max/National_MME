@@ -1,18 +1,31 @@
 "use client"
 
-import { use } from "react"
+import { use, useEffect, useState } from "react"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowLeft, MapPin, CheckCircle2, Users, Mail, Phone, Building2, GraduationCap, Calendar } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 export default function SchoolProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
   const schoolId = Number.parseInt(id)
-  const school = dashboardData.chapters.schools.find((s) => s.id === schoolId)
+  const [dashboardData, setDashboardData] = useState<any>(null)
+  const [school, setSchool] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => {
+        setDashboardData(data)
+        const foundSchool = data.chapters.schools.find((s: any) => s.id === schoolId)
+        setSchool(foundSchool)
+      })
+      .catch(err => console.error('Error loading data:', err))
+  }, [schoolId])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
 
   if (!school) {
     notFound()

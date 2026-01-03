@@ -1,13 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import AccountForm from "@/components/signup/account-form"
 import PaymentSummary from "@/components/signup/payment-summary"
 import ProcessingState from "@/components/signup/processing-state"
 import SuccessState from "@/components/signup/success-state"
-import landingData from "@/data/landing.json"
 
 export type SignupFormData = {
   fullName: string
@@ -22,6 +21,7 @@ export type SignupStep = "account" | "payment" | "processing" | "success"
 export default function SignupPage() {
   const router = useRouter()
   const [currentStep, setCurrentStep] = useState<SignupStep>("account")
+  const [landingData, setLandingData] = useState<any>(null)
   const [formData, setFormData] = useState<SignupFormData>({
     fullName: "",
     email: "",
@@ -30,6 +30,15 @@ export default function SignupPage() {
     confirmPassword: "",
   })
   const [paymentError, setPaymentError] = useState<string | null>(null)
+
+  useEffect(() => {
+    fetch('/api/landing')
+      .then(res => res.json())
+      .then(data => setLandingData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!landingData) return <div className="min-h-screen flex items-center justify-center">Loading...</div>
 
   const { signup, site } = landingData
 

@@ -2,13 +2,12 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Award, Briefcase, Building, MapPin, Download, ChevronRight, Calendar, Users, Verified } from "lucide-react"
-import dashboardData from "@/data/dashboard.json"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   award: Award,
@@ -26,6 +25,17 @@ const colorMap: Record<string, string> = {
 
 export default function DashboardPage() {
   const [certificateModalOpen, setCertificateModalOpen] = useState(false)
+  const [dashboardData, setDashboardData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(res => res.json())
+      .then(data => setDashboardData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!dashboardData) return <div className="p-8">Loading...</div>
+
   const { user, quickActions, internships } = dashboardData
 
   return (

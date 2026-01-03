@@ -2,12 +2,20 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, MapPin } from "lucide-react"
-import { useState } from "react"
 import Link from "next/link"
-import landingData from "@/data/landing.json"
+import { useEffect, useState } from "react"
 
 export default function HeroSection() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
+  const [landingData, setLandingData] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/landing')
+      .then(res => res.json())
+      .then(data => setLandingData(data))
+      .catch(err => console.error('Error loading data:', err))
+  }, [])
+
+  if (!landingData) return <div className="py-20">Loading...</div>
 
   const { hero, navigation } = landingData
 
@@ -41,7 +49,7 @@ export default function HeroSection() {
 
             {/* Stats */}
             <div className="flex flex-wrap gap-8">
-              {hero.stats.map((stat, index) => (
+              {hero.stats.map((stat: { value: string; label: string }, index: number) => (
                 <div key={index}>
                   <div className="text-3xl font-bold text-foreground">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -79,22 +87,13 @@ export default function HeroSection() {
                 alt="NAMMES Students in the field"
                 className="w-full h-full object-cover"
               />
-              {/* Play Button Overlay */}
-              <button
-                onClick={() => setIsVideoPlaying(true)}
-                className="absolute inset-0 flex items-center justify-center bg-background/20 hover:bg-background/30 transition-colors group"
-              >
-                <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center animate-pulse-glow">
-                  <Play className="w-8 h-8 text-primary-foreground fill-primary-foreground ml-1" />
-                </div>
-              </button>
             </div>
 
             {/* Floating Card */}
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-2xl max-w-xs hidden lg:block">
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
-                  {hero.floatingCard.avatars.map((avatar, index) => (
+                  {hero.floatingCard.avatars.map((avatar: string, index: number) => (
                     <img
                       key={index}
                       src={avatar || "/placeholder.svg"}
